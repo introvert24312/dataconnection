@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-23T20:57:05Z",
-    "lastModified" : "2025-08-23T20:57:05Z",
+    "createdAt" : "2025-08-23T21:03:26Z",
+    "lastModified" : "2025-08-23T21:03:26Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -47,8 +47,8 @@
   "metadata" : {
     "syncEnabled" : true,
     "totalLayers" : 3,
-    "totalNodes" : 7,
-    "totalTags" : 13
+    "totalNodes" : 6,
+    "totalTags" : 12
   },
   "nodes" : [
     {
@@ -59,22 +59,22 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "54BA9972-6034-4137-8C90-04062E316148",
+          "createdAt" : "2025-08-23T21:03:24Z",
+          "id" : "8C8F7294-E8F3-4B67-A752-B325044F6578",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "吊龙"
         },
         {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "1D1601B4-4365-4237-B55F-E5AB2842B82A",
+          "createdAt" : "2025-08-23T21:03:24Z",
+          "id" : "592CA650-0B5B-4348-A91B-91E7418B6C0A",
           "isShortcutType" : false,
           "type" : "peach",
           "value" : "水蜜桃"
         },
         {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "91C6C99E-2BF4-427A-90DD-A64EA4C72CCD",
+          "createdAt" : "2025-08-23T21:03:24Z",
+          "id" : "4BD6F456-9329-4D6D-A28C-55F34F1633D0",
           "isShortcutType" : false,
           "type" : "love",
           "value" : "依赖"
@@ -88,18 +88,18 @@
       "id" : "89026CDC-1F1B-48BB-8774-F4E7662757E0",
       "isCompound" : false,
       "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "markdown" : "",
+      "markdown" : "![参天大树.JPG](Images\/img_1755982844432.JPG)",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "D763108C-C89C-42A3-B953-FE89DCAF326F",
+          "createdAt" : "2025-08-23T21:03:24Z",
+          "id" : "828168DD-5A11-4DE8-BA9A-DA1EAE5687F7",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "雪花"
         }
       ],
       "text" : "菜单2",
-      "updatedAt" : "2025-08-22T06:21:28Z"
+      "updatedAt" : "2025-08-23T21:01:02Z"
     },
     {
       "createdAt" : "2025-08-22T10:29:25Z",
@@ -110,22 +110,22 @@
       "meaning" : "复合节点：包含 2 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "B15FAF1E-B5DC-47BF-8FAE-43DBD429787D",
+          "createdAt" : "2025-08-23T21:03:24Z",
+          "id" : "3284DAE5-6756-4348-8EE6-B5E65BC0C7C9",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "1级复合节点"
         },
         {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "21809507-8307-44DA-8AA8-3E9A38F7EAAF",
+          "createdAt" : "2025-08-23T21:03:24Z",
+          "id" : "203F4E2F-6D67-4A8B-BC64-281373F5373E",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单1"
         },
         {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "51C9F596-777C-46E4-95CF-E6D98B9704C8",
+          "createdAt" : "2025-08-23T21:03:24Z",
+          "id" : "9E499F0B-6F0D-469B-8AC9-96D0D3942B92",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单2"
@@ -143,15 +143,15 @@
       "meaning" : "复合节点：包含 1 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "6034F502-4CA5-444A-B941-22DDD46477C8",
+          "createdAt" : "2025-08-23T21:03:24Z",
+          "id" : "14274499-7161-4C11-9CC6-025A1BD8461D",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "2级复合节点"
         },
         {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "D8F1403C-FFCB-49B0-A654-F67E41F99676",
+          "createdAt" : "2025-08-23T21:03:24Z",
+          "id" : "02AA2596-D8BE-44E7-9183-EE90AF49D5DA",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点"
@@ -169,15 +169,15 @@
       "meaning" : "复合节点：包含 复合节点kkk",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "3407D90C-1B69-4929-8727-7C34A652D8C4",
+          "createdAt" : "2025-08-23T21:03:24Z",
+          "id" : "76025100-89CD-4511-8259-C457EC36487A",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "3级复合节点"
         },
         {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "113FE3D9-A019-441A-B50B-586C10362019",
+          "createdAt" : "2025-08-23T21:03:24Z",
+          "id" : "0FA8F643-C4AD-45A5-A426-B1D51322D13D",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点kkk"
@@ -187,40 +187,22 @@
       "updatedAt" : "2025-08-22T11:04:20Z"
     },
     {
-      "createdAt" : "2025-08-23T11:59:52Z",
-      "id" : "8CF5F248-2801-400D-9378-2D4FDDFA7071",
+      "createdAt" : "2025-08-23T21:03:24Z",
+      "id" : "96A11682-74DC-4F7C-A0B9-C1A5F884191D",
       "isCompound" : false,
       "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "C82C0A3A-720B-401B-B5A0-6EA3B1C2A699",
-          "isShortcutType" : true,
-          "type" : "jjkk",
-          "value" : "怎么了"
-        }
-      ],
-      "text" : "史蒂夫",
-      "updatedAt" : "2025-08-23T15:27:59Z"
-    },
-    {
-      "createdAt" : "2025-08-23T17:47:01Z",
-      "id" : "9077D8CE-E6F0-482F-A671-3C5AFA5ADA3D",
-      "isCompound" : false,
-      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "markdown" : "",
-      "tags" : [
-        {
-          "createdAt" : "2025-08-23T20:57:05Z",
-          "id" : "2E5EB14B-EAB8-480A-A5A0-B2F5C6969301",
+          "createdAt" : "2025-08-23T21:03:24Z",
+          "id" : "7EC6D930-711B-458F-BC4E-1B319985929A",
           "isShortcutType" : true,
           "type" : "ksdf",
-          "value" : "dskf"
+          "value" : "sdf"
         }
       ],
-      "text" : "收到了看法江东父老",
-      "updatedAt" : "2025-08-23T17:47:01Z"
+      "text" : "哈哈",
+      "updatedAt" : "2025-08-23T21:03:24Z"
     }
   ],
   "tagMappings" : [
@@ -337,7 +319,7 @@
     {
       "id" : "FF1BFF5F-35D2-49DA-A8F4-8E8FCA80CC5B",
       "key" : "ksdf",
-      "typeName" : "类别"
+      "typeName" : "sdsdffsdfd"
     },
     {
       "id" : "A4F7E0E4-4E88-4D0E-93C8-62BCFDD50D5B",
@@ -348,6 +330,11 @@
       "id" : "6C0DA61D-257E-4BA1-A632-0D803FA3E893",
       "key" : "sdfs",
       "typeName" : "sdfs"
+    },
+    {
+      "id" : "5F8F7B29-EB4C-49C4-82B7-A954FBFAEA81",
+      "key" : "sdssf",
+      "typeName" : "sdssf"
     }
   ]
 }
