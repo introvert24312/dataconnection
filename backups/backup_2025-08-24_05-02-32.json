@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-23T19:11:27Z",
-    "lastModified" : "2025-08-23T19:11:27Z",
+    "createdAt" : "2025-08-23T21:02:32Z",
+    "lastModified" : "2025-08-23T21:02:32Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -47,8 +47,8 @@
   "metadata" : {
     "syncEnabled" : true,
     "totalLayers" : 3,
-    "totalNodes" : 7,
-    "totalTags" : 13
+    "totalNodes" : 5,
+    "totalTags" : 11
   },
   "nodes" : [
     {
@@ -59,22 +59,22 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "9DA2D1FF-8808-4FE5-A73E-D9F68A41C07B",
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "B2A1D80B-7DD3-4E0B-91D1-9C35A0D3033B",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "吊龙"
         },
         {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "2414A8D8-2499-46BE-BB7F-BF7D85806A08",
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "9B27FF96-AB49-4994-B822-76ACCCCE4FDA",
           "isShortcutType" : false,
           "type" : "peach",
           "value" : "水蜜桃"
         },
         {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "43D49EE9-FAE6-495D-9D46-2632393FEA0D",
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "51E67AAD-17E0-4520-9890-129F66B1C70B",
           "isShortcutType" : false,
           "type" : "love",
           "value" : "依赖"
@@ -88,18 +88,18 @@
       "id" : "89026CDC-1F1B-48BB-8774-F4E7662757E0",
       "isCompound" : false,
       "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "markdown" : "",
+      "markdown" : "![参天大树.JPG](Images\/img_1755982844432.JPG)",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "53EAC48B-3401-43D7-9E8B-86372D5DBA82",
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "83B60C5D-899D-48B7-91C4-9AAF835A7C48",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "雪花"
         }
       ],
       "text" : "菜单2",
-      "updatedAt" : "2025-08-22T06:21:28Z"
+      "updatedAt" : "2025-08-23T21:01:02Z"
     },
     {
       "createdAt" : "2025-08-22T10:29:25Z",
@@ -110,22 +110,22 @@
       "meaning" : "复合节点：包含 2 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "E47F0E8A-2712-4433-A951-88DA715BCBAB",
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "014D58C8-5374-4CE9-B434-9D52D708A18B",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "1级复合节点"
         },
         {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "01F7400F-F38E-48D7-AAE4-B2725DD05505",
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "77BB9797-0122-4320-9282-CD5403ECBB44",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单1"
         },
         {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "EBFA77BC-737F-47F6-AD98-F51A768C14F0",
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "21B9BF02-31BA-4979-AFDF-5814AFF65711",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单2"
@@ -143,15 +143,15 @@
       "meaning" : "复合节点：包含 1 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "892A9EE6-F0EC-48F0-BB06-FF60C9424CE1",
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "D0979393-CC89-453E-BCE2-43AE2743A04D",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "2级复合节点"
         },
         {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "13483FD7-76FA-464D-9822-F2071FB89419",
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "E9516EF6-836A-42A0-BCD2-2BF88CA013CF",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点"
@@ -169,15 +169,15 @@
       "meaning" : "复合节点：包含 复合节点kkk",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "39267064-0A02-4008-8A8A-0D8F419297E4",
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "7C32FEFB-85FA-4B5C-9BD6-2EC634E6E52D",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "3级复合节点"
         },
         {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "9AB7DE2A-96BE-476C-B039-43F687589AAA",
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "5AFF0D36-5965-43EF-B270-32C3CB0CCD3E",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点kkk"
@@ -185,42 +185,6 @@
       ],
       "text" : "有趣",
       "updatedAt" : "2025-08-22T11:04:20Z"
-    },
-    {
-      "createdAt" : "2025-08-23T11:59:52Z",
-      "id" : "8CF5F248-2801-400D-9378-2D4FDDFA7071",
-      "isCompound" : false,
-      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "markdown" : "",
-      "tags" : [
-        {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "4A39F5EF-EE31-4F0A-82DD-AF64D017BADD",
-          "isShortcutType" : true,
-          "type" : "jjkk",
-          "value" : "怎么了"
-        }
-      ],
-      "text" : "史蒂夫",
-      "updatedAt" : "2025-08-23T15:27:59Z"
-    },
-    {
-      "createdAt" : "2025-08-23T17:47:01Z",
-      "id" : "9077D8CE-E6F0-482F-A671-3C5AFA5ADA3D",
-      "isCompound" : false,
-      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "markdown" : "",
-      "tags" : [
-        {
-          "createdAt" : "2025-08-23T19:11:26Z",
-          "id" : "8BEDF042-33E5-4610-B6A9-EF916E2CA6E3",
-          "isShortcutType" : true,
-          "type" : "ksdf",
-          "value" : "dskf"
-        }
-      ],
-      "text" : "收到了看法江东父老",
-      "updatedAt" : "2025-08-23T17:47:01Z"
     }
   ],
   "tagMappings" : [
@@ -348,6 +312,11 @@
       "id" : "6C0DA61D-257E-4BA1-A632-0D803FA3E893",
       "key" : "sdfs",
       "typeName" : "sdfs"
+    },
+    {
+      "id" : "5F8F7B29-EB4C-49C4-82B7-A954FBFAEA81",
+      "key" : "sdssf",
+      "typeName" : "sdssf"
     }
   ]
 }
