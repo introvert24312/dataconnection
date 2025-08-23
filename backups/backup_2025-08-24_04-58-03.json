@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-23T18:15:58Z",
-    "lastModified" : "2025-08-23T18:15:58Z",
+    "createdAt" : "2025-08-23T20:58:03Z",
+    "lastModified" : "2025-08-23T20:58:03Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -47,8 +47,8 @@
   "metadata" : {
     "syncEnabled" : true,
     "totalLayers" : 3,
-    "totalNodes" : 9,
-    "totalTags" : 15
+    "totalNodes" : 6,
+    "totalTags" : 12
   },
   "nodes" : [
     {
@@ -59,22 +59,22 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "0DACF733-932C-4D00-BB8A-0CED02F520EC",
+          "createdAt" : "2025-08-23T20:58:02Z",
+          "id" : "01E6B94F-E76E-4F55-9B97-02239953C56A",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "吊龙"
         },
         {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "A779D19D-4CEB-466E-AC8C-2F41A14AC197",
+          "createdAt" : "2025-08-23T20:58:02Z",
+          "id" : "BC05BB29-6167-449F-B6BB-174D8FAA499D",
           "isShortcutType" : false,
           "type" : "peach",
           "value" : "水蜜桃"
         },
         {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "525B7F59-3C51-4178-80DC-6CE6D9B2E743",
+          "createdAt" : "2025-08-23T20:58:02Z",
+          "id" : "E9D1A6D0-8F26-4566-B5EC-AC31755B6DAD",
           "isShortcutType" : false,
           "type" : "love",
           "value" : "依赖"
@@ -91,8 +91,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "6A0A9599-9A40-41A9-863C-67442EAE3F7D",
+          "createdAt" : "2025-08-23T20:58:02Z",
+          "id" : "E4AD8829-BFA8-4B19-9BF4-2DA926ECDC3C",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "雪花"
@@ -110,22 +110,22 @@
       "meaning" : "复合节点：包含 2 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "3562D4B4-EC17-44D0-B68B-340887025AEC",
+          "createdAt" : "2025-08-23T20:58:02Z",
+          "id" : "9AA190F7-2EAB-4DB0-9C81-E08202B5FC12",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "1级复合节点"
         },
         {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "81985BD4-8739-4704-8164-0AAC0D6AF105",
+          "createdAt" : "2025-08-23T20:58:02Z",
+          "id" : "FC60A3B0-58A8-4DB5-A0EC-5E97F8CE70AC",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单1"
         },
         {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "DA70475D-52A3-4CD9-8C7C-10070FCEC60D",
+          "createdAt" : "2025-08-23T20:58:02Z",
+          "id" : "5630230E-7AC4-4067-AFA4-D78779AF15F3",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单2"
@@ -143,15 +143,15 @@
       "meaning" : "复合节点：包含 1 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "E150BAFD-6681-4624-9CE8-822179EBDAC8",
+          "createdAt" : "2025-08-23T20:58:02Z",
+          "id" : "6103D247-09F6-4EBD-BCA3-B01FE80B080F",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "2级复合节点"
         },
         {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "B9E17C58-092F-42CC-9788-8FA8072709A3",
+          "createdAt" : "2025-08-23T20:58:02Z",
+          "id" : "B7D23626-DAA9-4DED-AF5A-9F897B49B434",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点"
@@ -169,15 +169,15 @@
       "meaning" : "复合节点：包含 复合节点kkk",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "336087FC-0934-44AD-B061-5EFAB8834DC9",
+          "createdAt" : "2025-08-23T20:58:02Z",
+          "id" : "B9F0985D-A979-48FF-AC22-5B4C15070994",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "3级复合节点"
         },
         {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "4BFC7316-66D9-4246-829D-0A2144E8EFA7",
+          "createdAt" : "2025-08-23T20:58:02Z",
+          "id" : "706335EF-5853-474C-8466-022BBCD4BEC4",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点kkk"
@@ -194,8 +194,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "1A476ED7-F0A7-4238-B0A4-F83577E285E7",
+          "createdAt" : "2025-08-23T20:58:02Z",
+          "id" : "2825BE52-0023-4644-A7E4-5A755AE88787",
           "isShortcutType" : true,
           "type" : "jjkk",
           "value" : "怎么了"
@@ -203,60 +203,6 @@
       ],
       "text" : "史蒂夫",
       "updatedAt" : "2025-08-23T15:27:59Z"
-    },
-    {
-      "createdAt" : "2025-08-23T17:46:37Z",
-      "id" : "2F4AF363-8F43-42E7-AE59-74B3B7A85D2E",
-      "isCompound" : false,
-      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "markdown" : "",
-      "tags" : [
-        {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "4FCA0379-D9F6-4204-AC58-3309EC4CACE5",
-          "isShortcutType" : true,
-          "type" : "kd",
-          "value" : "sa1"
-        }
-      ],
-      "text" : "lodc",
-      "updatedAt" : "2025-08-23T17:46:37Z"
-    },
-    {
-      "createdAt" : "2025-08-23T17:47:01Z",
-      "id" : "9077D8CE-E6F0-482F-A671-3C5AFA5ADA3D",
-      "isCompound" : false,
-      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "markdown" : "",
-      "tags" : [
-        {
-          "createdAt" : "2025-08-23T18:15:28Z",
-          "id" : "DB45E161-4DA5-43FB-BAD4-B720324442D4",
-          "isShortcutType" : true,
-          "type" : "ksdf",
-          "value" : "dskf"
-        }
-      ],
-      "text" : "收到了看法江东父老",
-      "updatedAt" : "2025-08-23T17:47:01Z"
-    },
-    {
-      "createdAt" : "2025-08-23T18:15:57Z",
-      "id" : "5F50BE36-C8A0-4BF5-B08D-2CB846E46E39",
-      "isCompound" : false,
-      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "markdown" : "",
-      "tags" : [
-        {
-          "createdAt" : "2025-08-23T18:15:57Z",
-          "id" : "F2F841D1-360D-4F67-8209-A15BA63816E0",
-          "isShortcutType" : true,
-          "type" : "sdfs",
-          "value" : "kj"
-        }
-      ],
-      "text" : "sldkfjslkdf",
-      "updatedAt" : "2025-08-23T18:15:57Z"
     }
   ],
   "tagMappings" : [

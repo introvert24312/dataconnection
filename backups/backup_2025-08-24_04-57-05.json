@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-23T18:15:28Z",
-    "lastModified" : "2025-08-23T18:15:28Z",
+    "createdAt" : "2025-08-23T20:57:05Z",
+    "lastModified" : "2025-08-23T20:57:05Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -47,8 +47,8 @@
   "metadata" : {
     "syncEnabled" : true,
     "totalLayers" : 3,
-    "totalNodes" : 8,
-    "totalTags" : 14
+    "totalNodes" : 7,
+    "totalTags" : 13
   },
   "nodes" : [
     {
@@ -59,22 +59,22 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "81A4122A-0F35-4059-86BA-E85ED873CD90",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "54BA9972-6034-4137-8C90-04062E316148",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "吊龙"
         },
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "EF0919EF-972C-4350-8EB0-B70E6BCBF521",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "1D1601B4-4365-4237-B55F-E5AB2842B82A",
           "isShortcutType" : false,
           "type" : "peach",
           "value" : "水蜜桃"
         },
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "56128AAC-F6B0-49F3-AFCA-C9BEF8F212ED",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "91C6C99E-2BF4-427A-90DD-A64EA4C72CCD",
           "isShortcutType" : false,
           "type" : "love",
           "value" : "依赖"
@@ -91,8 +91,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "9B82D21B-FFCE-4CBF-85C6-E2C6FC4D4487",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "D763108C-C89C-42A3-B953-FE89DCAF326F",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "雪花"
@@ -110,22 +110,22 @@
       "meaning" : "复合节点：包含 2 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "EC40E074-C5C8-4D12-BE6D-771FF8CAFF51",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "B15FAF1E-B5DC-47BF-8FAE-43DBD429787D",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "1级复合节点"
         },
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "536F02DB-EF27-443F-A80F-5A47126A653A",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "21809507-8307-44DA-8AA8-3E9A38F7EAAF",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单1"
         },
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "54B7A982-964E-45D8-B553-74CFACCBBF9D",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "51C9F596-777C-46E4-95CF-E6D98B9704C8",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单2"
@@ -143,15 +143,15 @@
       "meaning" : "复合节点：包含 1 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "38978EAB-F272-40BB-9840-4D18547190DA",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "6034F502-4CA5-444A-B941-22DDD46477C8",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "2级复合节点"
         },
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "1C02D881-AE8B-4DA5-935C-CC30781DC6D7",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "D8F1403C-FFCB-49B0-A654-F67E41F99676",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点"
@@ -169,15 +169,15 @@
       "meaning" : "复合节点：包含 复合节点kkk",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "F0A735F3-253C-4CCD-8819-CF0BFB9FF160",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "3407D90C-1B69-4929-8727-7C34A652D8C4",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "3级复合节点"
         },
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "63FE9D9D-4C81-47FE-A637-AC132921740C",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "113FE3D9-A019-441A-B50B-586C10362019",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点kkk"
@@ -194,8 +194,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "BA215803-EFF7-424C-9A4B-1D47DCE3D6DB",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "C82C0A3A-720B-401B-B5A0-6EA3B1C2A699",
           "isShortcutType" : true,
           "type" : "jjkk",
           "value" : "怎么了"
@@ -205,24 +205,6 @@
       "updatedAt" : "2025-08-23T15:27:59Z"
     },
     {
-      "createdAt" : "2025-08-23T17:46:37Z",
-      "id" : "2F4AF363-8F43-42E7-AE59-74B3B7A85D2E",
-      "isCompound" : false,
-      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "markdown" : "",
-      "tags" : [
-        {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "5003AE08-6DA0-435A-9479-D490B721377B",
-          "isShortcutType" : true,
-          "type" : "kd",
-          "value" : "sa1"
-        }
-      ],
-      "text" : "lodc",
-      "updatedAt" : "2025-08-23T17:46:37Z"
-    },
-    {
       "createdAt" : "2025-08-23T17:47:01Z",
       "id" : "9077D8CE-E6F0-482F-A671-3C5AFA5ADA3D",
       "isCompound" : false,
@@ -230,8 +212,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T18:14:39Z",
-          "id" : "A4A8B1E4-E45E-42D7-A83C-C094BC02AF69",
+          "createdAt" : "2025-08-23T20:57:05Z",
+          "id" : "2E5EB14B-EAB8-480A-A5A0-B2F5C6969301",
           "isShortcutType" : true,
           "type" : "ksdf",
           "value" : "dskf"
@@ -361,6 +343,11 @@
       "id" : "A4F7E0E4-4E88-4D0E-93C8-62BCFDD50D5B",
       "key" : "sdsf",
       "typeName" : "sdsf"
+    },
+    {
+      "id" : "6C0DA61D-257E-4BA1-A632-0D803FA3E893",
+      "key" : "sdfs",
+      "typeName" : "sdfs"
     }
   ]
 }
