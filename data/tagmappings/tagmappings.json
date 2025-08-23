@@ -2,7 +2,7 @@
   {
     "id" : "69FE3F68-0BB3-48F8-BF18-24939F509697",
     "key" : "loc",
-    "typeName" : "地点"
+    "typeName" : "位置"
   },
   {
     "id" : "9642D74A-5C15-4AC4-B01F-24B9C543975C",
@@ -72,11 +72,56 @@
   {
     "id" : "2AF657C3-E879-4F42-8A7A-2E19D5C70EF3",
     "key" : "jjkk",
-    "typeName" : "jjkk"
+    "typeName" : "尼玛的"
   },
   {
     "id" : "D95F28BF-2C71-416E-9937-23778EADBCEF",
     "key" : "sd",
     "typeName" : "sd"
+  },
+  {
+    "id" : "C7F68C45-A088-4E5F-87DC-7605D0594543",
+    "key" : "dfk",
+    "typeName" : "dfk"
+  },
+  {
+    "id" : "075CD211-A648-446A-9147-46FD05800C54",
+    "key" : "dlf",
+    "typeName" : "dlf"
+  },
+  {
+    "id" : "57E52304-4B4B-4ADD-B2D5-35D6CD85CD91",
+    "key" : "oo",
+    "typeName" : "好看"
+  },
+  {
+    "id" : "CA5D71A9-8097-4C0E-B1EB-2AE0E1906327",
+    "key" : "kd",
+    "typeName" : "sdf"
+  },
+  {
+    "id" : "A93E78D4-7C30-496C-A5EB-B898548E7CB8",
+    "key" : "sdf",
+    "typeName" : "sdf"
+  },
+  {
+    "id" : "8A137AA9-0F0A-471D-A9B3-45460C67D7BA",
+    "key" : "ksldfj",
+    "typeName" : "ksldfj"
+  },
+  {
+    "id" : "FF1BFF5F-35D2-49DA-A8F4-8E8FCA80CC5B",
+    "key" : "ksdf",
+    "typeName" : "类别"
+  },
+  {
+    "id" : "A4F7E0E4-4E88-4D0E-93C8-62BCFDD50D5B",
+    "key" : "sdsf",
+    "typeName" : "sdsf"
+  },
+  {
+    "id" : "6C0DA61D-257E-4BA1-A632-0D803FA3E893",
+    "key" : "sdfs",
+    "typeName" : "sdfs"
   }
 ]

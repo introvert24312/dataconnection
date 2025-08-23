@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-23T14:29:20Z",
-    "lastModified" : "2025-08-23T14:29:20Z",
+    "createdAt" : "2025-08-23T18:41:55Z",
+    "lastModified" : "2025-08-23T18:41:55Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -47,8 +47,8 @@
   "metadata" : {
     "syncEnabled" : true,
     "totalLayers" : 3,
-    "totalNodes" : 9,
-    "totalTags" : 15
+    "totalNodes" : 8,
+    "totalTags" : 14
   },
   "nodes" : [
     {
@@ -59,22 +59,22 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-22T11:02:47Z",
-          "id" : "E5656499-B8A8-404B-918F-73C3D62FD58F",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "2ABD0108-D6D8-40AE-9586-86C072883628",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "吊龙"
         },
         {
-          "createdAt" : "2025-08-22T11:02:47Z",
-          "id" : "53FA5965-D0E1-41AC-80A5-2401FAC98FE6",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "23EB06EC-2879-4B6F-877D-8661EBCD7C78",
           "isShortcutType" : false,
           "type" : "peach",
           "value" : "水蜜桃"
         },
         {
-          "createdAt" : "2025-08-22T11:02:47Z",
-          "id" : "DD49A5B4-26B9-405D-94A1-009F37AD711C",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "89BF6623-3B82-4609-9E33-B5CE6CFC83BD",
           "isShortcutType" : false,
           "type" : "love",
           "value" : "依赖"
@@ -91,8 +91,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-22T06:21:28Z",
-          "id" : "6A018C22-6625-42EA-B5A1-1BE22C4FBCD1",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "382929A4-E7DF-494F-8DB8-CF81D854301A",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "雪花"
@@ -110,22 +110,22 @@
       "meaning" : "复合节点：包含 2 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-22T10:29:25Z",
-          "id" : "B90C604C-2AC9-4C9C-8311-ADBFE5FBDE92",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "2D3C19A7-6E76-4833-82DC-F85E1281F51F",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "1级复合节点"
         },
         {
-          "createdAt" : "2025-08-22T10:29:25Z",
-          "id" : "C284DB16-FB33-494C-8CC8-C9E5BBD56ADE",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "E407EDD6-4689-4DE6-AB28-F6C9E721B7C1",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单1"
         },
         {
-          "createdAt" : "2025-08-22T10:29:25Z",
-          "id" : "CA8AC27B-67A0-4F83-9D1B-FB373C7B3B69",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "94E6741B-5927-4779-AA0A-3E3F835F2E0D",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单2"
@@ -143,15 +143,15 @@
       "meaning" : "复合节点：包含 1 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-22T11:03:24Z",
-          "id" : "8B9AE511-DFDB-463A-B521-EC17F4EFAFC8",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "68AAAFF6-3A01-4DA9-8E83-25FD4F00380D",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "2级复合节点"
         },
         {
-          "createdAt" : "2025-08-22T11:03:24Z",
-          "id" : "A3729133-8AEC-49F8-A2C4-AE3191B2F5B6",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "82D0A5A7-FC2E-45F8-9848-6E585B976A74",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点"
@@ -169,15 +169,15 @@
       "meaning" : "复合节点：包含 复合节点kkk",
       "tags" : [
         {
-          "createdAt" : "2025-08-22T11:04:20Z",
-          "id" : "34BEC7CD-ADEB-4395-8B58-5A5A6CFEBF6E",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "9102FE15-1693-4E0F-9993-173DBE22EE60",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "3级复合节点"
         },
         {
-          "createdAt" : "2025-08-22T11:04:20Z",
-          "id" : "2F7F9405-A396-49A8-A023-B612C8FE933A",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "CE4FB333-5532-4042-8EB0-4BD2841CCA4D",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点kkk"
@@ -187,42 +187,6 @@
       "updatedAt" : "2025-08-22T11:04:20Z"
     },
     {
-      "createdAt" : "2025-08-23T06:46:33Z",
-      "id" : "17DA3A36-5FD2-483E-872A-AD64B0061FF5",
-      "isCompound" : false,
-      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "markdown" : "",
-      "tags" : [
-        {
-          "createdAt" : "2025-08-23T06:46:33Z",
-          "id" : "C4F1D0E3-CF1A-497A-BAB9-DF541553F908",
-          "isShortcutType" : false,
-          "type" : "peach",
-          "value" : "离开"
-        }
-      ],
-      "text" : "菜单233",
-      "updatedAt" : "2025-08-23T06:46:33Z"
-    },
-    {
-      "createdAt" : "2025-08-23T10:53:24Z",
-      "id" : "80B2CADB-1185-4DED-8D77-A3DEA6C40E0F",
-      "isCompound" : false,
-      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "markdown" : "",
-      "tags" : [
-        {
-          "createdAt" : "2025-08-23T10:53:24Z",
-          "id" : "EDF38DE0-D64E-48E6-AA55-34FB40444764",
-          "isShortcutType" : true,
-          "type" : "kk",
-          "value" : "k看"
-        }
-      ],
-      "text" : "是离开对方",
-      "updatedAt" : "2025-08-23T10:53:24Z"
-    },
-    {
       "createdAt" : "2025-08-23T11:59:52Z",
       "id" : "8CF5F248-2801-400D-9378-2D4FDDFA7071",
       "isCompound" : false,
@@ -230,40 +194,58 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T11:59:52Z",
-          "id" : "283F7D04-B307-4E07-83B1-19E9E321A503",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "2EB05167-12EB-448E-BA5B-1ABE3AA5F8C8",
           "isShortcutType" : true,
           "type" : "jjkk",
           "value" : "怎么了"
         }
       ],
       "text" : "史蒂夫",
-      "updatedAt" : "2025-08-23T11:59:52Z"
+      "updatedAt" : "2025-08-23T15:27:59Z"
     },
     {
-      "createdAt" : "2025-08-23T12:08:21Z",
-      "id" : "32B17491-41C7-488D-AAE8-4631A998D8E6",
+      "createdAt" : "2025-08-23T17:46:37Z",
+      "id" : "2F4AF363-8F43-42E7-AE59-74B3B7A85D2E",
       "isCompound" : false,
       "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-23T12:08:21Z",
-          "id" : "15C49BBD-7D54-4ADE-AA96-9807B3FB275C",
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "20EC76F2-A24A-411A-B96B-C8909FF2A1E0",
           "isShortcutType" : true,
-          "type" : "sd",
-          "value" : "sdkfj"
+          "type" : "kd",
+          "value" : "sa1"
         }
       ],
-      "text" : "怎么了",
-      "updatedAt" : "2025-08-23T12:08:21Z"
+      "text" : "lodc",
+      "updatedAt" : "2025-08-23T17:46:37Z"
+    },
+    {
+      "createdAt" : "2025-08-23T17:47:01Z",
+      "id" : "9077D8CE-E6F0-482F-A671-3C5AFA5ADA3D",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-23T18:40:10Z",
+          "id" : "534C8DFC-91A8-4685-8C9A-5AE1C88DB42E",
+          "isShortcutType" : true,
+          "type" : "ksdf",
+          "value" : "dskf"
+        }
+      ],
+      "text" : "收到了看法江东父老",
+      "updatedAt" : "2025-08-23T17:47:01Z"
     }
   ],
   "tagMappings" : [
     {
       "id" : "69FE3F68-0BB3-48F8-BF18-24939F509697",
       "key" : "loc",
-      "typeName" : "地点"
+      "typeName" : "位置"
     },
     {
       "id" : "9642D74A-5C15-4AC4-B01F-24B9C543975C",
@@ -333,12 +315,57 @@
     {
       "id" : "2AF657C3-E879-4F42-8A7A-2E19D5C70EF3",
       "key" : "jjkk",
-      "typeName" : "jjkk"
+      "typeName" : "尼玛的"
     },
     {
       "id" : "D95F28BF-2C71-416E-9937-23778EADBCEF",
       "key" : "sd",
       "typeName" : "sd"
+    },
+    {
+      "id" : "C7F68C45-A088-4E5F-87DC-7605D0594543",
+      "key" : "dfk",
+      "typeName" : "dfk"
+    },
+    {
+      "id" : "075CD211-A648-446A-9147-46FD05800C54",
+      "key" : "dlf",
+      "typeName" : "dlf"
+    },
+    {
+      "id" : "57E52304-4B4B-4ADD-B2D5-35D6CD85CD91",
+      "key" : "oo",
+      "typeName" : "好看"
+    },
+    {
+      "id" : "CA5D71A9-8097-4C0E-B1EB-2AE0E1906327",
+      "key" : "kd",
+      "typeName" : "sdf"
+    },
+    {
+      "id" : "A93E78D4-7C30-496C-A5EB-B898548E7CB8",
+      "key" : "sdf",
+      "typeName" : "sdf"
+    },
+    {
+      "id" : "8A137AA9-0F0A-471D-A9B3-45460C67D7BA",
+      "key" : "ksldfj",
+      "typeName" : "ksldfj"
+    },
+    {
+      "id" : "FF1BFF5F-35D2-49DA-A8F4-8E8FCA80CC5B",
+      "key" : "ksdf",
+      "typeName" : "类别"
+    },
+    {
+      "id" : "A4F7E0E4-4E88-4D0E-93C8-62BCFDD50D5B",
+      "key" : "sdsf",
+      "typeName" : "sdsf"
+    },
+    {
+      "id" : "6C0DA61D-257E-4BA1-A632-0D803FA3E893",
+      "key" : "sdfs",
+      "typeName" : "sdfs"
     }
   ]
 }
