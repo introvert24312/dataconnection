@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vditor IR</title>
+
+  <!-- Vditor -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vditor/dist/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/vditor/dist/index.min.js"></script>
+
+  <!-- Mermaid -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+
+  <style>
+    :root { --bg: transparent; --mmd-font: 20px; }
+    html, body { margin:0; padding:0; background: var(--bg); }
+    #vditor { height: 100vh; }
+
+    /* --- Mermaid base scaling via container font-size --- */
+    .mermaid { 
+      font-size: 20px !important;
+      zoom: 1.3;  /* 整体放大 1.3 倍 */
+      transform-origin: top left;
+    }
+    .mermaid svg text { 
+      font-size: 20px !important;
+      font-family: -apple-system, 'SF Pro Text', sans-serif !important;
+    }
+
+    /* --- Dark content readability for Markdown preview/content --- */
+    .vditor--dark .vditor-reset { color: #c9d1d9; }
+    
+    /* --- 图片性能优化 --- */
+    .vditor-reset img {
+      max-width: 100%;
+      height: auto;
+      image-rendering: -webkit-optimize-contrast;
+      will-change: transform;
+    }
+    
+    /* 大图片加载时显示占位符 */
+    .vditor-reset img[src^="data:"] {
+      background: #f0f0f0;
+      min-height: 100px;
+    }
+    
+    .vditor--dark .vditor-reset img[src^="data:"] {
+      background: #2b2b2b;
+    }
+    
+    /* 本地图片路径处理 */
+    .vditor-reset img[src^="Images/"],
+    .vditor-reset img[src^="./Images/"],
+    .vditor-reset img[src*="/Images/"] {
+      max-width: 100%;
+      height: auto;
+      cursor: default;
+      display: block;
+    }
+    
+    /* 图片加载失败时的样式 */
+    .vditor-reset img:not([src=""]) {
+      min-width: 100px;
+      min-height: 100px;
+      background: #f0f0f0 url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="%23999">图片加载中...</text></svg>') center no-repeat;
+    }
+    .vditor--dark .vditor-reset h1,
+    .vditor--dark .vditor-reset h2,
+    .vditor--dark .vditor-reset h3,
+    .vditor--dark .vditor-reset h4,
+    .vditor--dark .vditor-reset h5,
+    .vditor--dark .vditor-reset h6 { color: #e6edf3; }
+    .vditor--dark .vditor-reset a { color: #58a6ff; }
+    .vditor--dark .vditor-reset code,
+    .vditor--dark .vditor-reset pre {
+      background: #161b22;
+      color: #c9d1d9;
+      border-color: #30363d;
+    }
+  </style>
+</head>
+<body>
+  <div id="vditor"></div>
+
+  <script>
+  (function(){
+    // -------- Mermaid 主题配置（不监听系统）--------
+    function currentMermaidConfig(dark){
+      const shared = {
+        startOnLoad: false,
+        securityLevel: 'loose',
+        fontFamily: "-apple-system, 'SF Pro Text', 'Segoe UI', Arial, sans-serif",
+        flowchart: { useMaxWidth: true, htmlLabels: true, curve: 'basis', padding: 8, nodeSpacing: 40, rankSpacing: 40 }
+      };
+      return dark ? {
+        ...shared,
+        theme: 'dark',
+        themeVariables: {
+          primaryColor:'#161b22', primaryTextColor:'#c9d1d9', primaryBorderColor:'#30363d',
+          lineColor:'#58a6ff', background:'#0d1117', mainBkg:'#161b22', secondaryColor:'#21262d',
+          fontSize:'20px', lineHeight:'1.4'
+        }
+      } : {
+        ...shared,
+        theme: 'default',
+        themeVariables: {
+          primaryColor:'#ffffff', primaryTextColor:'#24292f', primaryBorderColor:'#d0d7de',
+          lineColor:'#0969da', tertiaryColor:'#f6f8fa', background:'#ffffff',
+          fontSize:'20px', lineHeight:'1.4'
+        }
+      };
+    }
+
+    function installMermaid(dark){
+      if (!window.mermaid) return;
+      window.mermaid.initialize(currentMermaidConfig(dark));
+    }
+
+    // 容器修正，避免 SVG 锁高/溢出 + viewBox 缩放
+    function containerFix(){
+      document.querySelectorAll('.mermaid>svg').forEach(svg=>{
+        svg.style.display='block';
+        svg.style.width='100%';
+        svg.style.height='auto';
+        svg.style.removeProperty('transform');
+        svg.style.removeProperty('min-width');
+        svg.style.removeProperty('min-height');
+        
+        // viewBox 缩放：放大内容
+        const viewBox = svg.getAttribute('viewBox');
+        if (viewBox) {
+          const [x, y, width, height] = viewBox.split(' ').map(Number);
+          const scaleFactor = 0.7; // 缩小 viewBox 使内容看起来更大
+          svg.setAttribute('viewBox', `${x} ${y} ${width * scaleFactor} ${height * scaleFactor}`);
+        }
+      });
+    }
+
+    // Vditor 初始化（固定浅色占位；真实主题由 Native 注入）
+    const vditor = new Vditor('vditor', {
+      mode: 'ir',
+      theme: 'classic',                   // 占位
+      value: '',
+      width: '100%',
+      height: '100vh',
+      cache: { enable: false },
+      hotkey: {
+        // 禁用 Command+E 快捷键，让 App 使用
+        'edit-mode': '',
+        // 彻底禁用所有可能的 Command+E 相关快捷键
+        'Ctrl+Alt+E': '',
+        'Shift+Ctrl+E': '',
+        'Ctrl+E': '',
+        // 🔥 禁用 Command+O、Command+L 和 Command+D，让应用层接管
+        'Cmd+O': '',
+        'Ctrl+O': '',
+        'Cmd+D': '',
+        'Ctrl+D': '',
+        'Cmd+L': '',
+        'Ctrl+L': '',
+        // 禁用可能的组合键
+        'Cmd+Shift+O': '',
+        'Cmd+Shift+L': '',
+        'Ctrl+Shift+O': '',
+        'Ctrl+Shift+L': ''
+      },
+      after(){
+        // 通知 Native：ready
+        try { window.webkit?.messageHandlers?.bridge?.postMessage({ type: 'ready' }); } catch(_) {}
+        setTimeout(containerFix, 30);
+        
+        // 拦截特殊快捷键
+        document.addEventListener('keydown', function(e) {
+          // Command+E: 转发给原生 App
+          if (e.metaKey && (e.key === 'e' || e.key === 'E')) {
+            console.log('拦截 Command+E 快捷键，转发给 App 处理');
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            
+            try {
+              window.webkit?.messageHandlers?.bridge?.postMessage({ 
+                type: 'commandE'
+              });
+            } catch(err) {
+              console.error('无法发送 Command+E 事件:', err);
+            }
+            return false;
+          }
+          
+          // Command+O: 转发给原生App处理
+          if (e.metaKey && (e.key === 'o' || e.key === 'O')) {
+            console.log('🔥 拦截 Command+O 快捷键，转发给App处理');
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            
+            try {
+              window.webkit?.messageHandlers?.bridge?.postMessage({ 
+                type: 'commandO'
+              });
+            } catch(err) {
+              console.error('无法发送 Command+O 事件:', err);
+            }
+            return false;
+          }
+          
+          // Command+L: 转发给原生App处理
+          if (e.metaKey && (e.key === 'l' || e.key === 'L')) {
+            console.log('🔥 拦截 Command+L 快捷键，转发给App处理');
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            
+            try {
+              window.webkit?.messageHandlers?.bridge?.postMessage({ 
+                type: 'commandL'
+              });
+            } catch(err) {
+              console.error('无法发送 Command+L 事件:', err);
+            }
+            return false;
+          }
+          
+          // Command+D: 转发给原生App处理 (全屏详情面板)
+          if (e.metaKey && (e.key === 'd' || e.key === 'D')) {
+            console.log('🔥 拦截 Command+D 快捷键，转发给App处理');
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            
+            try {
+              window.webkit?.messageHandlers?.bridge?.postMessage({ 
+                type: 'commandD'
+              });
+            } catch(err) {
+              console.error('无法发送 Command+D 事件:', err);
+            }
+            return false;
+          }
+          
+          // Command+/: 切换编辑模式
+          if (e.metaKey && e.key === '/') {
+            console.log('🎯 拦截 Command+/ 快捷键，准备切换编辑模式');
+            console.log('按键信息:', { key: e.key, metaKey: e.metaKey, ctrlKey: e.ctrlKey, altKey: e.altKey });
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            
+            try {
+              if (window.__toggleVditorMode) {
+                console.log('🔄 调用 __toggleVditorMode 函数');
+                window.__toggleVditorMode();
+              } else {
+                console.error('❌ __toggleVditorMode 函数不存在');
+              }
+            } catch(err) {
+              console.error('❌ 无法切换编辑模式:', err);
+            }
+            return false;
+          }
+        }, true);
+      },
+      preview: {
+        theme: { current: 'light' },      // 占位
+        hljs: { enable: true, style: 'github' },
+        math: { engine: 'KaTeX' },
+        mermaid: { startOnLoad:false }     // 由我们手动控制
+      },
+      toolbar: ['emoji','headings','bold','italic','strike','link','|','list','ordered-list','check','outdent','indent','|','quote','line','code','inline-code','insert-before','insert-after','|','upload','table','|','undo','redo','|','fullscreen','edit-mode','both','preview','outline','code-theme' ],
+      upload: { 
+        accept:'image/*',
+        async handler(files) {
+          // 自定义上传处理
+          const file = files[0];
+          if (!file) return;
+          
+          try {
+            // 生成唯一文件名
+            const timestamp = Date.now();
+            const ext = file.name.split('.').pop() || 'jpg';
+            const fileName = `img_${timestamp}.${ext}`;
+            
+            // 显示加载提示
+            vditor.insertValue(`![加载中...]()`);
+            
+            // 读取文件
+            const reader = new FileReader();
+            reader.onload = (e) => {
+              const base64 = e.target.result.split(',')[1]; // 去掉 data:image/xxx;base64, 前缀
+              
+              // 发送到 Swift 保存
+              window.webkit?.messageHandlers?.bridge?.postMessage({ 
+                type: 'saveImage',
+                fileName: fileName,
+                data: base64
+              });
+              
+              // 设置回调处理
+              window.__onImageSaved = (name, path) => {
+                // 替换加载提示为实际图片路径（使用相对路径）
+                const content = vditor.getValue();
+                const updated = content.replace('![加载中...]()', `![${file.name}](${path})`);
+                vditor.setValue(updated);
+              };
+              
+              window.__onImageSaveError = (name, error) => {
+                alert(`保存图片失败: ${error}`);
+                const content = vditor.getValue();
+                const updated = content.replace('![加载中...]()', '');
+                vditor.setValue(updated);
+              };
+            };
+            
+            reader.readAsDataURL(file);
+          } catch (error) {
+            console.error('处理图片失败:', error);
+            alert('处理图片失败');
+          }
+          
+          return null; // 阻止默认处理
+        }
+      },
+      input(value){
+        clearTimeout(window.__inputDebounce);
+        window.__inputDebounce = setTimeout(()=>{
+          // 获取原始 Markdown 内容（getValue 已经处理了还原）
+          const originalValue = vditor.getValue();
+          console.log('Input event - sending value:', originalValue.substring(0, 100) + '...');
+          try { 
+            window.webkit?.messageHandlers?.bridge?.postMessage({ 
+              type:'change', 
+              value: originalValue 
+            }); 
+          } catch(e) {
+            console.error('Failed to send change message:', e);
+          }
+        }, 50); // 缩短防抖时间到50ms，提高响应速度
+      },
+      // 添加 blur 事件处理，确保失焦时立即保存
+      blur() {
+        clearTimeout(window.__inputDebounce);
+        const originalValue = vditor.getValue();
+        console.log('Blur event - immediately sending value');
+        try { 
+          window.webkit?.messageHandlers?.bridge?.postMessage({ 
+            type:'change', 
+            value: originalValue 
+          }); 
+        } catch(e) {
+          console.error('Failed to send change message on blur:', e);
+        }
+      }
+    });
+    window.vditor = vditor;
+    
+    // 实现自定义图片缩放语法
+    // 支持格式：
+    // ![alt|50](src)      - 缩放到 50%
+    // ![alt|75.5](src)    - 缩放到 75.5%
+    // ![alt|300px](src)   - 固定宽度 300 像素
+    const processImageScale = (markdown) => {
+      return markdown.replace(/!\[([^\]]*?)\|([0-9.]+)(px)?\]\(([^)]+)\)/g, (match, alt, size, unit, src) => {
+        // 如果有 px 单位，使用像素；否则使用百分比
+        const style = unit === 'px' 
+          ? `width: ${size}px; height: auto; max-width: 100%;`
+          : `width: ${size}%; height: auto; max-width: 100%;`;
+        // 保留原始 alt 文本（去掉缩放参数）
+        return `<img src="${src}" alt="${alt}" style="${style}" title="${alt}" />`;
+      });
+    };
+    
+    // 保存原始 Markdown 用于编辑
+    let originalMarkdown = { current: '' };
+    
+    // 重写 setValue 以支持缩放语法
+    const originalSetValue = vditor.setValue.bind(vditor);
+    vditor.setValue = function(value) {
+      // 保存原始内容
+      originalMarkdown.current = value;
+      // 处理缩放语法仅用于显示
+      const processed = processImageScale(value);
+      originalSetValue(processed);
+    };
+    
+    // 确保 input 事件也处理缩放
+    const originalInsertValue = vditor.insertValue.bind(vditor);
+    vditor.insertValue = function(value) {
+      const processed = processImageScale(value);
+      originalInsertValue(processed);
+    };
+    
+    // 重写 getValue 返回原始内容
+    const originalGetValue = vditor.getValue.bind(vditor);
+    vditor.getValue = function() {
+      // 获取当前编辑器内容
+      const currentValue = originalGetValue();
+      // 如果内容包含我们的 HTML img 标签，尝试还原
+      if (currentValue.includes('<img')) {
+        // 还原 img 标签为 Markdown 格式
+        return currentValue.replace(/<img src="([^"]+)" alt="([^"]*)" style="width: (\d+(?:\.\d+)?)(px|%);[^"]*"[^>]*>/g, 
+          (match, src, alt, size, unit) => {
+            const suffix = unit === 'px' ? 'px' : '';
+            return `![${alt}|${size}${suffix}](${src})`;
+          });
+      }
+      return currentValue;
+    };
+    
+    // 监听图片加载事件进行调试
+    document.addEventListener('error', function(e) {
+      if (e.target.tagName === 'IMG') {
+        console.error('图片加载失败:', e.target.src);
+        // 尝试修复路径
+        const src = e.target.src;
+        if (src.includes('Images/') && !src.startsWith('file://')) {
+          // 如果不是 file:// 开头，尝试转换
+          const filename = src.split('Images/').pop();
+          e.target.src = 'Images/' + filename;
+        }
+      }
+    }, true);
+    
+    // 图片交互处理：支持双击放大、Command+点击在Finder中显示、在文档内缩放拖动
+    let imageClickTimeout = null;
+    let imageClickCount = 0;
+    
+    // 添加图片缩放状态管理
+    let scaledImages = new Map(); // 存储每个图片的缩放状态
+    
+    // 创建全屏覆盖层（用于退出缩放模式）
+    function createImageOverlay(img) {
+      const overlay = document.createElement('div');
+      overlay.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 10000;
+        cursor: zoom-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      `;
+      
+      const clonedImg = img.cloneNode(true);
+      clonedImg.style.cssText = `
+        max-width: 90vw;
+        max-height: 90vh;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        transform-origin: center;
+        transition: none;  // 移除默认过渡，减少延迟
+        cursor: grab;
+      `;
+      
+      let scale = 1;
+      let translateX = 0;
+      let translateY = 0;
+      let isDragging = false;
+      let startX = 0;
+      let startY = 0;
+      
+      // 更新变换
+      function updateTransform() {
+        clonedImg.style.transform = `scale(${scale}) translate(${translateX}px, ${translateY}px)`;
+      }
+      
+      // 真正的捏合缩放支持
+      let initialDistance = 0;
+      let initialScale = 1;
+      let isGesturing = false;
+      
+      // Gesture事件支持（Safari/WebKit）
+      overlay.addEventListener('gesturestart', (e) => {
+        e.preventDefault();
+        isGesturing = true;
+        initialScale = scale;
+        clonedImg.style.transition = 'none';
+      });
+      
+      overlay.addEventListener('gesturechange', (e) => {
+        e.preventDefault();
+        if (isGesturing) {
+          const newScale = initialScale * e.scale;
+          scale = Math.max(0.5, Math.min(5, newScale));
+          updateTransform();
+        }
+      });
+      
+      overlay.addEventListener('gestureend', (e) => {
+        e.preventDefault();
+        isGesturing = false;
+        // 移除过渡动画，减少释放延迟
+      });
+      
+      // 双指触摸捏合缩放（通用支持）
+      let touches = {};
+      
+      overlay.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        if (e.touches.length === 2) {
+          // 双指捏合开始
+          const touch1 = e.touches[0];
+          const touch2 = e.touches[1];
+          initialDistance = Math.sqrt(
+            Math.pow(touch2.clientX - touch1.clientX, 2) + 
+            Math.pow(touch2.clientY - touch1.clientY, 2)
+          );
+          initialScale = scale;
+          clonedImg.style.transition = 'none';
+          isGesturing = true;
+        } else if (e.touches.length === 1 && !isGesturing) {
+          // 单指拖拽
+          const touch = e.touches[0];
+          lastTouchX = touch.clientX;
+          lastTouchY = touch.clientY;
+          isTouchDragging = true;
+          clonedImg.style.transition = 'none';
+        }
+      });
+      
+      overlay.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+        
+        if (e.touches.length === 2 && isGesturing) {
+          // 双指捏合缩放
+          const touch1 = e.touches[0];
+          const touch2 = e.touches[1];
+          const currentDistance = Math.sqrt(
+            Math.pow(touch2.clientX - touch1.clientX, 2) + 
+            Math.pow(touch2.clientY - touch1.clientY, 2)
+          );
+          
+          if (initialDistance > 0) {
+            const scaleRatio = currentDistance / initialDistance;
+            const newScale = initialScale * scaleRatio;
+            scale = Math.max(0.5, Math.min(5, newScale));
+            updateTransform();
+          }
+        } else if (e.touches.length === 1 && isTouchDragging && !isGesturing) {
+          // 单指拖拽 - 进一步降低灵敏度
+          const touch = e.touches[0];
+          const deltaX = (touch.clientX - lastTouchX) * 0.4;  // 降低到40%灵敏度
+          const deltaY = (touch.clientY - lastTouchY) * 0.4;  // 降低到40%灵敏度
+          
+          translateX += deltaX;
+          translateY += deltaY;
+          
+          lastTouchX = touch.clientX;
+          lastTouchY = touch.clientY;
+          updateTransform();
+        }
+      });
+      
+      overlay.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        if (e.touches.length < 2) {
+          isGesturing = false;
+          initialDistance = 0;
+        }
+        if (e.touches.length === 0) {
+          isTouchDragging = false;
+        }
+        // 移除过渡动画，减少释放延迟
+      });
+      
+      // 鼠标滚轮缩放（支持触控板捏合）
+      overlay.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        
+        // 检测是否是触控板捏合手势（ctrlKey为true表示捏合）
+        if (e.ctrlKey) {
+          // 触控板捏合缩放，更精细的控制
+          const delta = -e.deltaY * 0.01;
+          scale = Math.max(0.5, Math.min(5, scale * (1 + delta)));
+        } else {
+          // 普通滚轮缩放
+          const delta = e.deltaY > 0 ? 0.9 : 1.1;
+          scale = Math.max(0.5, Math.min(5, scale * delta));
+        }
+        updateTransform();
+      });
+      
+      // 触摸变量声明（用于上面的触摸事件）
+      let lastTouchX = 0;
+      let lastTouchY = 0;
+      let isTouchDragging = false;
+      
+      // 拖拽功能
+      clonedImg.addEventListener('mousedown', (e) => {
+        if (e.button === 0) {
+          e.preventDefault();
+          isDragging = true;
+          startX = e.clientX - translateX;
+          startY = e.clientY - translateY;
+          clonedImg.style.cursor = 'grabbing';
+          clonedImg.style.transition = 'none';
+        }
+      });
+      
+      overlay.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+          translateX = e.clientX - startX;
+          translateY = e.clientY - startY;
+          updateTransform();
+        }
+      });
+      
+      overlay.addEventListener('mouseup', () => {
+        if (isDragging) {
+          isDragging = false;
+          clonedImg.style.cursor = 'grab';
+          // 移除过渡动画，减少鼠标释放延迟
+        }
+      });
+      
+      // 双击重置
+      clonedImg.addEventListener('dblclick', (e) => {
+        e.stopPropagation();
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        updateTransform();
+      });
+      
+      // 点击空白区域或ESC退出
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          document.body.removeChild(overlay);
+        }
+      });
+      
+      // 键盘快捷键
+      const handleKeyPress = (e) => {
+        e.preventDefault();
+        switch(e.key) {
+          case 'Escape':
+            // ESC退出 - 立即关闭，无延迟
+            if (document.body.contains(overlay)) {
+              document.body.removeChild(overlay);
+            }
+            document.removeEventListener('keydown', handleKeyPress);
+            break;
+          case '0':
+            // 数字0重置缩放
+            scale = 1;
+            translateX = 0;
+            translateY = 0;
+            updateTransform();
+            break;
+          case '=':
+          case '+':
+            // 放大
+            scale = Math.min(5, scale * 1.2);
+            updateTransform();
+            break;
+          case '-':
+            // 缩小
+            scale = Math.max(0.5, scale * 0.8);
+            updateTransform();
+            break;
+          case '1':
+            // 实际大小
+            scale = 1;
+            updateTransform();
+            break;
+        }
+      };
+      document.addEventListener('keydown', handleKeyPress);
+      
+      overlay.appendChild(clonedImg);
+      return overlay;
+    }
+    
+    // 阻止所有图片的默认双击行为（包括vditor内置的）
+    document.addEventListener('dblclick', function(e) {
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        e.stopPropagation();
+      }
+    }, true);
+    
+    document.addEventListener('click', function(e) {
+      if (e.target.tagName === 'IMG' && e.target.src.includes('Images/')) {
+        if (e.metaKey) {
+          // Command+点击：在 Finder 中显示图片
+          e.preventDefault();
+          e.stopPropagation();
+          const src = e.target.src;
+          const filename = src.split('Images/').pop();
+          try {
+            window.webkit?.messageHandlers?.bridge?.postMessage({ 
+              type: 'showImageInFinder',
+              filename: 'Images/' + filename
+            });
+          } catch(err) {
+            console.error('无法打开图片:', err);
+          }
+        } else {
+          // 普通点击：处理双击检测
+          e.preventDefault();
+          e.stopPropagation();
+          
+          imageClickCount++;
+          const currentImg = e.target;
+          
+          if (imageClickCount === 1) {
+            imageClickTimeout = setTimeout(() => {
+              // 单击：不做任何操作
+              console.log('单击图片');
+              imageClickCount = 0;
+            }, 300);
+          } else if (imageClickCount === 2) {
+            // 双击：进入缩放模式
+            clearTimeout(imageClickTimeout);
+            imageClickCount = 0;
+            
+            console.log('双击图片，进入缩放模式');
+            const overlay = createImageOverlay(currentImg);
+            document.body.appendChild(overlay);
+            
+            // 立即显示，无淡入动画
+            overlay.style.opacity = '1';
+          }
+        }
+      }
+    });
+
+    // 动态调整 Mermaid 基准字号（整体缩放）
+    window.__setMermaidFont = function(px){
+      try {
+        document.documentElement.style.setProperty('--mmd-font', typeof px === 'number' ? px + 'px' : String(px));
+        const val = vditor.getValue();
+        if (val != null) vditor.setValue(val); // 触发预览重算
+      } catch(_) {}
+      setTimeout(containerFix, 60);
+    };
+
+    // Native 唯一入口：应用主题 + 触发重渲染
+    window.__applyNativeTheme = function(dark){
+      try {
+        const ui = dark ? 'dark' : 'classic';
+        const code = dark ? 'github-dark' : 'github';
+        const content = dark ? 'dark' : 'light';
+        if (vditor.setTheme) vditor.setTheme(ui, code, content);
+      } catch(_) {}
+      installMermaid(dark);
+      try {
+        const val = vditor.getValue();
+        if (val != null) vditor.setValue(val); // 触发预览（含 mermaid）重算
+      } catch(_) {}
+      setTimeout(containerFix, 60);
+    };
+
+    // 设置/强制设置 Markdown
+    window.__setMarkdown = function(text, force){
+      try{
+        const cur = vditor.getValue();
+        if (force || cur !== text) vditor.setValue(text);
+      }catch(_){}
+    };
+
+    // 切换编辑模式（IR <-> SV 分屏预览）
+    let currentEditMode = 'ir'; // 跟踪当前模式，默认为即时渲染(8)
+    
+    window.__toggleVditorMode = function(){
+      try{
+        console.log('🔄 开始切换编辑模式...');
+        console.log('当前模式:', currentEditMode);
+        
+        // 首先点击编辑模式按钮打开下拉菜单
+        const editModeBtn = document.querySelector('[data-type="edit-mode"]');
+        if (editModeBtn) {
+          console.log('找到编辑模式按钮');
+          editModeBtn.click();
+          
+          // 等待下拉菜单出现，然后选择对应的模式
+          setTimeout(() => {
+            if (currentEditMode === 'ir') {
+              // 从 IR(8) 切换到 SV(9) 分屏预览
+              const svBtn = document.querySelector('[data-mode="sv"]');
+              if (svBtn) {
+                console.log('切换到 SV 分屏预览模式');
+                svBtn.click();
+                currentEditMode = 'sv';
+              } else {
+                console.error('❌ 找不到 SV 按钮');
+                // 如果找不到SV按钮，尝试查找所有可用的模式按钮
+                const allModeButtons = document.querySelectorAll('[data-mode]');
+                console.log('可用的模式按钮:', Array.from(allModeButtons).map(btn => btn.getAttribute('data-mode')));
+              }
+            } else {
+              // 从 SV(9) 切换回 IR(8)
+              const irBtn = document.querySelector('[data-mode="ir"]');
+              if (irBtn) {
+                console.log('切换到 IR 即时渲染模式');
+                irBtn.click();
+                currentEditMode = 'ir';
+              } else {
+                console.error('❌ 找不到 IR 按钮');
+              }
+            }
+            
+            console.log('✅ 模式切换完成，当前模式:', currentEditMode);
+          }, 100); // 给下拉菜单一点时间显示
+        } else {
+          console.error('❌ 找不到编辑模式切换按钮');
+        }
+      }catch(e){
+        console.error('❌ 切换模式失败:', e);
+      }
+    };
+  })();
+  </script>
+</body>
+</html>

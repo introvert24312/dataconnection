@@ -1,0 +1,39 @@
+[
+  {
+    "childLayerIds" : [
+
+    ],
+    "color" : "blue",
+    "createdAt" : "2025-08-21T17:49:08Z",
+    "displayName" : "好",
+    "id" : "86B9DBDB-832F-480F-B155-769B7858D158",
+    "isActive" : true,
+    "isCompound" : false,
+    "name" : "好"
+  },
+  {
+    "childLayerIds" : [
+
+    ],
+    "color" : "blue",
+    "createdAt" : "2025-08-22T13:02:19Z",
+    "displayName" : "你呢",
+    "id" : "83FD4C08-A375-4234-8304-4CE55CC96A75",
+    "isActive" : false,
+    "isCompound" : false,
+    "name" : "你呢"
+  },
+  {
+    "childLayerIds" : [
+      "83FD4C08-A375-4234-8304-4CE55CC96A75",
+      "86B9DBDB-832F-480F-B155-769B7858D158"
+    ],
+    "color" : "purple",
+    "createdAt" : "2025-08-22T13:02:40Z",
+    "displayName" : "超级",
+    "id" : "9E9E75EF-FBE4-4EBF-B9E0-4AE4C49A9612",
+    "isActive" : false,
+    "isCompound" : true,
+    "name" : "超级"
+  }
+]

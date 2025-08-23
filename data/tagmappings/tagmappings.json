@@ -1,0 +1,82 @@
+[
+  {
+    "id" : "69FE3F68-0BB3-48F8-BF18-24939F509697",
+    "key" : "loc",
+    "typeName" : "地点"
+  },
+  {
+    "id" : "9642D74A-5C15-4AC4-B01F-24B9C543975C",
+    "key" : "compound",
+    "typeName" : "复合节点"
+  },
+  {
+    "id" : "DCFDEA1B-A458-48EF-B692-7C86E781A84B",
+    "key" : "child",
+    "typeName" : "子节点"
+  },
+  {
+    "id" : "FEF6ED27-AB7C-4148-B61A-D2235D8BD700",
+    "key" : "root",
+    "typeName" : "词根"
+  },
+  {
+    "id" : "EC3EF234-A276-49DF-9D90-6E447FC4C72D",
+    "key" : "beef",
+    "typeName" : "牛肉类型"
+  },
+  {
+    "id" : "EC7CD4E5-DEA3-4608-B5E6-0117851DC713",
+    "key" : "kind",
+    "typeName" : "kind"
+  },
+  {
+    "id" : "D6892419-5F53-42E6-8614-7A3C0AF0BFFD",
+    "key" : "lk",
+    "typeName" : "lk"
+  },
+  {
+    "id" : "94021516-2EFA-4098-AA5B-8D963D92C1EF",
+    "key" : "fr",
+    "typeName" : "水果品种"
+  },
+  {
+    "id" : "DB7B8BB1-DEE3-41D7-A047-D36B620342C5",
+    "key" : "果盘1",
+    "typeName" : "果盘1"
+  },
+  {
+    "id" : "39380BAB-780D-481F-A04D-1CD17B7DB762",
+    "key" : "菜单1",
+    "typeName" : "菜单1"
+  },
+  {
+    "id" : "6AC1D498-7A49-44CF-BD64-4A5EE0B6689B",
+    "key" : "peach",
+    "typeName" : "桃子"
+  },
+  {
+    "id" : "3F864934-B7BD-4ED5-8CDB-5BB681EA30B5",
+    "key" : "love",
+    "typeName" : "恋爱"
+  },
+  {
+    "id" : "3C6A4F75-1ADF-4E78-9454-FD5F92D42467",
+    "key" : "kk",
+    "typeName" : "史蒂夫"
+  },
+  {
+    "id" : "D0B14A3E-2AC8-416D-B3B0-03B76E702CBE",
+    "key" : "lkkk",
+    "typeName" : "lkkk"
+  },
+  {
+    "id" : "2AF657C3-E879-4F42-8A7A-2E19D5C70EF3",
+    "key" : "jjkk",
+    "typeName" : "jjkk"
+  },
+  {
+    "id" : "D95F28BF-2C71-416E-9937-23778EADBCEF",
+    "key" : "sd",
+    "typeName" : "sd"
+  }
+]
