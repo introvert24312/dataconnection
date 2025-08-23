@@ -1,0 +1,340 @@
+{
+  "config" : {
+    "appVersion" : "1.0",
+    "createdAt" : "2025-08-23T21:02:06Z",
+    "lastModified" : "2025-08-23T21:02:06Z",
+    "version" : "1.0"
+  },
+  "layers" : [
+    {
+      "childLayerIds" : [
+
+      ],
+      "color" : "blue",
+      "createdAt" : "2025-08-21T17:49:08Z",
+      "displayName" : "好",
+      "id" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "isActive" : true,
+      "isCompound" : false,
+      "name" : "好"
+    },
+    {
+      "childLayerIds" : [
+
+      ],
+      "color" : "blue",
+      "createdAt" : "2025-08-22T13:02:19Z",
+      "displayName" : "你呢",
+      "id" : "83FD4C08-A375-4234-8304-4CE55CC96A75",
+      "isActive" : false,
+      "isCompound" : false,
+      "name" : "你呢"
+    },
+    {
+      "childLayerIds" : [
+        "83FD4C08-A375-4234-8304-4CE55CC96A75",
+        "86B9DBDB-832F-480F-B155-769B7858D158"
+      ],
+      "color" : "purple",
+      "createdAt" : "2025-08-22T13:02:40Z",
+      "displayName" : "超级",
+      "id" : "9E9E75EF-FBE4-4EBF-B9E0-4AE4C49A9612",
+      "isActive" : false,
+      "isCompound" : true,
+      "name" : "超级"
+    }
+  ],
+  "metadata" : {
+    "syncEnabled" : true,
+    "totalLayers" : 3,
+    "totalNodes" : 6,
+    "totalTags" : 12
+  },
+  "nodes" : [
+    {
+      "createdAt" : "2025-08-22T06:21:00Z",
+      "id" : "5152BAAC-4115-4639-A554-15E3E4141D06",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "B2A1D80B-7DD3-4E0B-91D1-9C35A0D3033B",
+          "isShortcutType" : false,
+          "type" : "beef",
+          "value" : "吊龙"
+        },
+        {
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "9B27FF96-AB49-4994-B822-76ACCCCE4FDA",
+          "isShortcutType" : false,
+          "type" : "peach",
+          "value" : "水蜜桃"
+        },
+        {
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "51E67AAD-17E0-4520-9890-129F66B1C70B",
+          "isShortcutType" : false,
+          "type" : "love",
+          "value" : "依赖"
+        }
+      ],
+      "text" : "菜单1",
+      "updatedAt" : "2025-08-22T11:02:47Z"
+    },
+    {
+      "createdAt" : "2025-08-22T06:21:28Z",
+      "id" : "89026CDC-1F1B-48BB-8774-F4E7662757E0",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "![参天大树.JPG](Images\/img_1755982844432.JPG)",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "83B60C5D-899D-48B7-91C4-9AAF835A7C48",
+          "isShortcutType" : false,
+          "type" : "beef",
+          "value" : "雪花"
+        }
+      ],
+      "text" : "菜单2",
+      "updatedAt" : "2025-08-23T21:01:02Z"
+    },
+    {
+      "createdAt" : "2025-08-22T10:29:25Z",
+      "id" : "856E988C-2E07-4774-A264-087EBB99F467",
+      "isCompound" : true,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "meaning" : "复合节点：包含 2 个子节点",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "014D58C8-5374-4CE9-B434-9D52D708A18B",
+          "isShortcutType" : false,
+          "type" : "compound",
+          "value" : "1级复合节点"
+        },
+        {
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "77BB9797-0122-4320-9282-CD5403ECBB44",
+          "isShortcutType" : false,
+          "type" : "child",
+          "value" : "菜单1"
+        },
+        {
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "21B9BF02-31BA-4979-AFDF-5814AFF65711",
+          "isShortcutType" : false,
+          "type" : "child",
+          "value" : "菜单2"
+        }
+      ],
+      "text" : "复合节点",
+      "updatedAt" : "2025-08-22T11:02:47Z"
+    },
+    {
+      "createdAt" : "2025-08-22T11:03:24Z",
+      "id" : "BBEBD7E3-2000-44F9-98B5-66DF0C203E11",
+      "isCompound" : true,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "meaning" : "复合节点：包含 1 个子节点",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "D0979393-CC89-453E-BCE2-43AE2743A04D",
+          "isShortcutType" : false,
+          "type" : "compound",
+          "value" : "2级复合节点"
+        },
+        {
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "E9516EF6-836A-42A0-BCD2-2BF88CA013CF",
+          "isShortcutType" : false,
+          "type" : "child",
+          "value" : "复合节点"
+        }
+      ],
+      "text" : "复合节点kkk",
+      "updatedAt" : "2025-08-22T11:03:24Z"
+    },
+    {
+      "createdAt" : "2025-08-22T11:04:20Z",
+      "id" : "7FF75D25-BCEA-4727-874E-7E23985962A9",
+      "isCompound" : true,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "meaning" : "复合节点：包含 复合节点kkk",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "7C32FEFB-85FA-4B5C-9BD6-2EC634E6E52D",
+          "isShortcutType" : false,
+          "type" : "compound",
+          "value" : "3级复合节点"
+        },
+        {
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "5AFF0D36-5965-43EF-B270-32C3CB0CCD3E",
+          "isShortcutType" : false,
+          "type" : "child",
+          "value" : "复合节点kkk"
+        }
+      ],
+      "text" : "有趣",
+      "updatedAt" : "2025-08-22T11:04:20Z"
+    },
+    {
+      "createdAt" : "2025-08-23T21:02:05Z",
+      "id" : "852C8357-03A8-48A7-AD87-B54207E7B2DA",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-23T21:02:06Z",
+          "id" : "DFE5E0DF-3019-415D-B9BE-C9493F33922D",
+          "isShortcutType" : true,
+          "type" : "sdssf",
+          "value" : "s"
+        }
+      ],
+      "text" : "哈哈",
+      "updatedAt" : "2025-08-23T21:02:05Z"
+    }
+  ],
+  "tagMappings" : [
+    {
+      "id" : "69FE3F68-0BB3-48F8-BF18-24939F509697",
+      "key" : "loc",
+      "typeName" : "位置"
+    },
+    {
+      "id" : "9642D74A-5C15-4AC4-B01F-24B9C543975C",
+      "key" : "compound",
+      "typeName" : "复合节点"
+    },
+    {
+      "id" : "DCFDEA1B-A458-48EF-B692-7C86E781A84B",
+      "key" : "child",
+      "typeName" : "子节点"
+    },
+    {
+      "id" : "FEF6ED27-AB7C-4148-B61A-D2235D8BD700",
+      "key" : "root",
+      "typeName" : "词根"
+    },
+    {
+      "id" : "EC3EF234-A276-49DF-9D90-6E447FC4C72D",
+      "key" : "beef",
+      "typeName" : "牛肉类型"
+    },
+    {
+      "id" : "EC7CD4E5-DEA3-4608-B5E6-0117851DC713",
+      "key" : "kind",
+      "typeName" : "kind"
+    },
+    {
+      "id" : "D6892419-5F53-42E6-8614-7A3C0AF0BFFD",
+      "key" : "lk",
+      "typeName" : "lk"
+    },
+    {
+      "id" : "94021516-2EFA-4098-AA5B-8D963D92C1EF",
+      "key" : "fr",
+      "typeName" : "水果品种"
+    },
+    {
+      "id" : "DB7B8BB1-DEE3-41D7-A047-D36B620342C5",
+      "key" : "果盘1",
+      "typeName" : "果盘1"
+    },
+    {
+      "id" : "39380BAB-780D-481F-A04D-1CD17B7DB762",
+      "key" : "菜单1",
+      "typeName" : "菜单1"
+    },
+    {
+      "id" : "6AC1D498-7A49-44CF-BD64-4A5EE0B6689B",
+      "key" : "peach",
+      "typeName" : "桃子"
+    },
+    {
+      "id" : "3F864934-B7BD-4ED5-8CDB-5BB681EA30B5",
+      "key" : "love",
+      "typeName" : "恋爱"
+    },
+    {
+      "id" : "3C6A4F75-1ADF-4E78-9454-FD5F92D42467",
+      "key" : "kk",
+      "typeName" : "史蒂夫"
+    },
+    {
+      "id" : "D0B14A3E-2AC8-416D-B3B0-03B76E702CBE",
+      "key" : "lkkk",
+      "typeName" : "lkkk"
+    },
+    {
+      "id" : "2AF657C3-E879-4F42-8A7A-2E19D5C70EF3",
+      "key" : "jjkk",
+      "typeName" : "尼玛的"
+    },
+    {
+      "id" : "D95F28BF-2C71-416E-9937-23778EADBCEF",
+      "key" : "sd",
+      "typeName" : "sd"
+    },
+    {
+      "id" : "C7F68C45-A088-4E5F-87DC-7605D0594543",
+      "key" : "dfk",
+      "typeName" : "dfk"
+    },
+    {
+      "id" : "075CD211-A648-446A-9147-46FD05800C54",
+      "key" : "dlf",
+      "typeName" : "dlf"
+    },
+    {
+      "id" : "57E52304-4B4B-4ADD-B2D5-35D6CD85CD91",
+      "key" : "oo",
+      "typeName" : "好看"
+    },
+    {
+      "id" : "CA5D71A9-8097-4C0E-B1EB-2AE0E1906327",
+      "key" : "kd",
+      "typeName" : "sdf"
+    },
+    {
+      "id" : "A93E78D4-7C30-496C-A5EB-B898548E7CB8",
+      "key" : "sdf",
+      "typeName" : "sdf"
+    },
+    {
+      "id" : "8A137AA9-0F0A-471D-A9B3-45460C67D7BA",
+      "key" : "ksldfj",
+      "typeName" : "ksldfj"
+    },
+    {
+      "id" : "FF1BFF5F-35D2-49DA-A8F4-8E8FCA80CC5B",
+      "key" : "ksdf",
+      "typeName" : "类别"
+    },
+    {
+      "id" : "A4F7E0E4-4E88-4D0E-93C8-62BCFDD50D5B",
+      "key" : "sdsf",
+      "typeName" : "sdsf"
+    },
+    {
+      "id" : "6C0DA61D-257E-4BA1-A632-0D803FA3E893",
+      "key" : "sdfs",
+      "typeName" : "sdfs"
+    },
+    {
+      "id" : "5F8F7B29-EB4C-49C4-82B7-A954FBFAEA81",
+      "key" : "sdssf",
+      "typeName" : "sdssf"
+    }
+  ]
+}
