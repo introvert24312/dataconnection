@@ -7,22 +7,22 @@
     "markdown" : "",
     "tags" : [
       {
-        "createdAt" : "2025-08-23T22:36:21Z",
-        "id" : "81BA1D54-9838-41AA-8839-BA70E982ACA8",
+        "createdAt" : "2025-08-24T03:59:10Z",
+        "id" : "5079A14A-558C-4304-B25C-A4DB5F42C791",
         "isShortcutType" : false,
         "type" : "beef",
         "value" : "吊龙"
       },
       {
-        "createdAt" : "2025-08-23T22:36:21Z",
-        "id" : "176FEAC4-B49C-4842-A023-C86A0BFF596C",
+        "createdAt" : "2025-08-24T03:59:10Z",
+        "id" : "2C215BA8-7E74-43D1-91DC-94853E244C7A",
         "isShortcutType" : false,
         "type" : "peach",
         "value" : "水蜜桃"
       },
       {
-        "createdAt" : "2025-08-23T22:36:21Z",
-        "id" : "44B4A0C4-0705-4D83-A2F0-D28D01208959",
+        "createdAt" : "2025-08-24T03:59:10Z",
+        "id" : "8000E345-1282-4139-B275-C4E09E0A0BAD",
         "isShortcutType" : false,
         "type" : "love",
         "value" : "依赖"
@@ -39,8 +39,8 @@
     "markdown" : "![参天大树.JPG](Images\/img_1755982844432.JPG)",
     "tags" : [
       {
-        "createdAt" : "2025-08-23T22:36:21Z",
-        "id" : "0FC4C5D1-360A-4BAE-A784-E0547E786A3D",
+        "createdAt" : "2025-08-24T03:59:10Z",
+        "id" : "9EF9C45B-8189-43D4-B46C-EE9B5C84D36D",
         "isShortcutType" : false,
         "type" : "beef",
         "value" : "雪花"
@@ -58,22 +58,22 @@
     "meaning" : "复合节点：包含 2 个子节点",
     "tags" : [
       {
-        "createdAt" : "2025-08-23T22:36:21Z",
-        "id" : "19BBA7DC-A873-4430-B9F7-C3A5F362F7B9",
+        "createdAt" : "2025-08-24T03:59:10Z",
+        "id" : "9003105B-D6A3-44A6-B0A5-101B2FF43EB8",
         "isShortcutType" : false,
         "type" : "compound",
         "value" : "1级复合节点"
       },
       {
-        "createdAt" : "2025-08-23T22:36:21Z",
-        "id" : "88DC7287-4F51-4FC5-9F7F-AB6BBB72C82F",
+        "createdAt" : "2025-08-24T03:59:10Z",
+        "id" : "7F672901-8953-46EB-BB50-66A9C76AA26F",
         "isShortcutType" : false,
         "type" : "child",
         "value" : "菜单1"
       },
       {
-        "createdAt" : "2025-08-23T22:36:21Z",
-        "id" : "BFCF12DC-4886-486A-B616-EFC17597D9B5",
+        "createdAt" : "2025-08-24T03:59:10Z",
+        "id" : "0ED3A7CA-C0A5-442E-8F9A-0495729A60DA",
         "isShortcutType" : false,
         "type" : "child",
         "value" : "菜单2"
@@ -91,15 +91,15 @@
     "meaning" : "复合节点：包含 1 个子节点",
     "tags" : [
       {
-        "createdAt" : "2025-08-23T22:36:21Z",
-        "id" : "975D88C4-CBE3-4FE2-B7CB-10B7B8A8A4BB",
+        "createdAt" : "2025-08-24T03:59:10Z",
+        "id" : "AE9E327B-551A-44AF-BA0C-C10868464C88",
         "isShortcutType" : false,
         "type" : "compound",
         "value" : "2级复合节点"
       },
       {
-        "createdAt" : "2025-08-23T22:36:21Z",
-        "id" : "FC7B6E35-EED2-4EF3-A460-E1AAF77B19BA",
+        "createdAt" : "2025-08-24T03:59:10Z",
+        "id" : "F8B439B9-0E55-4499-87B7-B29D61529E05",
         "isShortcutType" : false,
         "type" : "child",
         "value" : "复合节点"
@@ -117,15 +117,15 @@
     "meaning" : "复合节点：包含 复合节点kkk",
     "tags" : [
       {
-        "createdAt" : "2025-08-23T22:36:21Z",
-        "id" : "A6CF3DE1-BD0C-427C-94D4-5722868E6273",
+        "createdAt" : "2025-08-24T03:59:10Z",
+        "id" : "8DB500A8-4554-4CEB-B2C3-8DB56F44A783",
         "isShortcutType" : false,
         "type" : "compound",
         "value" : "3级复合节点"
       },
       {
-        "createdAt" : "2025-08-23T22:36:21Z",
-        "id" : "2A0A4859-EE0A-46FE-8902-4E941CABC2BD",
+        "createdAt" : "2025-08-24T03:59:10Z",
+        "id" : "737DA71B-5539-4420-B169-8BFCB9318CC3",
         "isShortcutType" : false,
         "type" : "child",
         "value" : "复合节点kkk"
@@ -133,5 +133,23 @@
     ],
     "text" : "有趣",
     "updatedAt" : "2025-08-22T11:04:20Z"
+  },
+  {
+    "createdAt" : "2025-08-24T03:59:10Z",
+    "id" : "8A28CFA2-25FF-4695-BD42-199C706031A1",
+    "isCompound" : false,
+    "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+    "markdown" : "",
+    "tags" : [
+      {
+        "createdAt" : "2025-08-24T03:59:10Z",
+        "id" : "7DAECC72-140B-494E-817D-42A6CBCA1F02",
+        "isShortcutType" : true,
+        "type" : "kl",
+        "value" : "鸡哥"
+      }
+    ],
+    "text" : "战术地位",
+    "updatedAt" : "2025-08-24T03:59:10Z"
   }
 ]
