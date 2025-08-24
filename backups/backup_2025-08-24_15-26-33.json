@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-24T06:35:17Z",
-    "lastModified" : "2025-08-24T06:35:17Z",
+    "createdAt" : "2025-08-24T07:26:33Z",
+    "lastModified" : "2025-08-24T07:26:33Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -191,7 +191,7 @@
       "id" : "00D5941B-DE84-45F7-ACB0-F17A750F12C6",
       "isCompound" : false,
       "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "markdown" : "价格就是供给关系的桥梁\n\n我说的没错吧？？\n\n彻底\n",
+      "markdown" : "价格就是供给关系的桥梁\n\n我说的没错吧？？\n\n彻底搞懂怎么定价，\n",
       "tags" : [
         {
           "createdAt" : "2025-08-24T06:28:44Z",
@@ -202,7 +202,7 @@
         }
       ],
       "text" : "是离开对方",
-      "updatedAt" : "2025-08-24T06:35:16Z"
+      "updatedAt" : "2025-08-24T07:26:32Z"
     }
   ],
   "tagMappings" : [
