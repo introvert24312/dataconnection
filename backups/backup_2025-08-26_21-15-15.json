@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-24T15:24:02Z",
-    "lastModified" : "2025-08-24T15:24:02Z",
+    "createdAt" : "2025-08-26T13:15:15Z",
+    "lastModified" : "2025-08-26T13:15:15Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -14,7 +14,7 @@
       "createdAt" : "2025-08-21T17:49:08Z",
       "displayName" : "好",
       "id" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "isActive" : true,
+      "isActive" : false,
       "isCompound" : false,
       "name" : "好"
     },
@@ -42,12 +42,24 @@
       "isActive" : false,
       "isCompound" : true,
       "name" : "超级"
+    },
+    {
+      "childLayerIds" : [
+
+      ],
+      "color" : "blue",
+      "createdAt" : "2025-08-26T13:14:19Z",
+      "displayName" : "染发",
+      "id" : "BE26553C-F682-490C-8059-477C2D2DC11A",
+      "isActive" : true,
+      "isCompound" : false,
+      "name" : "染发"
     }
   ],
   "metadata" : {
     "syncEnabled" : true,
-    "totalLayers" : 3,
-    "totalNodes" : 7,
+    "totalLayers" : 4,
+    "totalNodes" : 8,
     "totalTags" : 13
   },
   "nodes" : [
@@ -59,22 +71,22 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "E7417C54-D989-445A-86D9-BB0C857D8C00",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "DE458EA5-D35E-4C44-8AD7-3E2854C256D0",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "吊龙"
         },
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "85C6634E-F142-4420-9073-EAADC60A30DC",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "AE31DFDF-1302-4A2B-9841-7945E9C5033D",
           "isShortcutType" : false,
           "type" : "peach",
           "value" : "水蜜桃"
         },
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "0792B2D4-97C6-4336-AB00-A01BBE2472BF",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "5A86EC2E-0A08-4B2B-A3A9-5FAD54FCE901",
           "isShortcutType" : false,
           "type" : "love",
           "value" : "依赖"
@@ -91,8 +103,8 @@
       "markdown" : "![参天大树.JPG](Images\/img_1755982844432.JPG)",
       "tags" : [
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "0DEB908E-08BF-4D37-90D2-15891C17EF0A",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "C4B93F71-C108-407E-ACB1-EEBC46CC180B",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "雪花"
@@ -110,22 +122,22 @@
       "meaning" : "复合节点：包含 2 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "889B50AC-140B-4B4C-90D8-2FB85328628C",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "6421737F-6E0A-4785-A5E7-7F8A10313280",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "1级复合节点"
         },
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "7B9C6FB8-8D44-4A91-A486-00CD661E7B4B",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "4CB9913F-9E58-46EC-A104-58900170FAAF",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单1"
         },
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "6ECF0966-5618-4121-8443-D88F96E7203B",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "70D3D8D3-A478-4E41-8C55-17109FD46E0C",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单2"
@@ -143,15 +155,15 @@
       "meaning" : "复合节点：包含 1 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "4FABC565-70DE-4D9A-A52D-5126152EADE7",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "5941A15B-430F-4617-B739-FBC479EF0939",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "2级复合节点"
         },
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "5AA85F62-AFCD-47B7-88A4-E6526CD62BF8",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "EC275825-6CDD-4202-9612-DEE87D6FE594",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点"
@@ -169,15 +181,15 @@
       "meaning" : "复合节点：包含 复合节点kkk",
       "tags" : [
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "B40C4774-05EC-4FDB-938A-7B514F053BAA",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "8A80B99F-556F-455A-8575-580CDEBA779B",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "3级复合节点"
         },
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "1D7135E8-40D7-4278-BF0C-3252B488C88E",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "C7C5B9CF-8880-48DD-9104-4DFC9D7B514B",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点kkk"
@@ -194,8 +206,8 @@
       "markdown" : "价格就是供给关系的桥梁\n\n我说的没错吧？？\n\n彻底搞懂怎么定价，",
       "tags" : [
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "98B59789-13B1-4F3F-87E0-521570346D5B",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "422BCFFB-C302-4267-969F-8B0776E02C03",
           "isShortcutType" : false,
           "type" : "kd",
           "value" : "df"
@@ -212,8 +224,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-24T15:24:01Z",
-          "id" : "69227A74-53FD-4EC0-86FD-046D0CC24724",
+          "createdAt" : "2025-08-26T13:14:54Z",
+          "id" : "2862E851-1A59-4357-871C-1BEF8225E3A1",
           "isShortcutType" : false,
           "latitude" : 37.46903135569384,
           "longitude" : 121.63467698281826,
@@ -223,6 +235,18 @@
       ],
       "text" : "辣椒圈",
       "updatedAt" : "2025-08-24T12:04:04Z"
+    },
+    {
+      "createdAt" : "2025-08-26T13:14:53Z",
+      "id" : "81BE67D3-52D1-4ED5-9AC2-19B3A83FF7D7",
+      "isCompound" : false,
+      "layerId" : "BE26553C-F682-490C-8059-477C2D2DC11A",
+      "markdown" : "指甲花是最最基本的\n",
+      "tags" : [
+
+      ],
+      "text" : "基本流程",
+      "updatedAt" : "2025-08-26T13:15:14Z"
     }
   ],
   "tagMappings" : [
