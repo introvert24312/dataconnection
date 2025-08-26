@@ -7,7 +7,7 @@
     "createdAt" : "2025-08-21T17:49:08Z",
     "displayName" : "好",
     "id" : "86B9DBDB-832F-480F-B155-769B7858D158",
-    "isActive" : false,
+    "isActive" : true,
     "isCompound" : false,
     "name" : "好"
   },
@@ -44,7 +44,7 @@
     "createdAt" : "2025-08-26T13:14:19Z",
     "displayName" : "染发",
     "id" : "BE26553C-F682-490C-8059-477C2D2DC11A",
-    "isActive" : true,
+    "isActive" : false,
     "isCompound" : false,
     "name" : "染发"
   }
