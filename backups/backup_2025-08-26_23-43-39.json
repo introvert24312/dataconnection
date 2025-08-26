@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-26T14:56:59Z",
-    "lastModified" : "2025-08-26T14:56:59Z",
+    "createdAt" : "2025-08-26T15:43:39Z",
+    "lastModified" : "2025-08-26T15:43:39Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -26,7 +26,7 @@
       "createdAt" : "2025-08-22T13:02:19Z",
       "displayName" : "你呢",
       "id" : "83FD4C08-A375-4234-8304-4CE55CC96A75",
-      "isActive" : false,
+      "isActive" : true,
       "isCompound" : false,
       "name" : "你呢"
     },
@@ -51,7 +51,7 @@
       "createdAt" : "2025-08-26T13:14:19Z",
       "displayName" : "染发",
       "id" : "BE26553C-F682-490C-8059-477C2D2DC11A",
-      "isActive" : true,
+      "isActive" : false,
       "isCompound" : false,
       "name" : "染发"
     }
@@ -71,22 +71,22 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "D734CE68-1EA5-4435-AD2F-F70BFA8B867A",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "7D5214B9-7750-464D-A8CC-05BF05D749DF",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "吊龙"
         },
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "AB933406-BD56-47CD-8445-7D65482433F6",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "1A05CC53-D8FB-4FFA-B411-55ED435F1912",
           "isShortcutType" : false,
           "type" : "peach",
           "value" : "水蜜桃"
         },
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "FE3DE844-3DEB-4090-B99B-1077EE8E0DD4",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "8C318078-CE84-498B-82DE-3E89836080BA",
           "isShortcutType" : false,
           "type" : "love",
           "value" : "依赖"
@@ -103,8 +103,8 @@
       "markdown" : "![参天大树.JPG](Images\/img_1755982844432.JPG)",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "78311072-CFC5-44A5-8196-BCC3F95B0C7D",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "B76EF825-44A3-4E6F-8E4A-0099F242512D",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "雪花"
@@ -122,22 +122,22 @@
       "meaning" : "复合节点：包含 2 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "FC226671-2486-4764-9561-F2703B02538E",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "E332B2E7-96C2-44E3-951B-A40299467878",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "1级复合节点"
         },
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "6AAFADC4-5F7D-418F-8302-31AFF88EA1E4",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "63771D70-D0A6-4567-B75F-F36BD563DFD4",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单1"
         },
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "31E4FFE4-7A1B-4C47-A950-B7E41A41BA25",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "BEA452B7-0026-47CD-AC1F-C0E0B8F565F3",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单2"
@@ -155,15 +155,15 @@
       "meaning" : "复合节点：包含 1 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "03D941C9-27C0-433E-B0B2-7AA36B624B71",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "B21937B0-4AE1-4960-9461-DE83D4D9FCB6",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "2级复合节点"
         },
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "4F0B55C3-574A-4C00-97DD-0689FA873A33",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "C00CBB26-FE8E-4A61-BAA1-363CE3E40FCE",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点"
@@ -181,15 +181,15 @@
       "meaning" : "复合节点：包含 复合节点kkk",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "0DE52F61-F686-4D6D-9B73-F5B948A7A8C2",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "86B9E49F-3887-45AE-83CE-7EACD5A3CA01",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "3级复合节点"
         },
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "168A5FB5-E74A-4F2C-9926-C2DB5489E8CF",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "F8353975-7B96-4C6A-B2CC-A53B463BA2F4",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点kkk"
@@ -206,8 +206,8 @@
       "markdown" : "价格就是供给关系的桥梁\n\n我说的没错吧？？\n\n彻底搞懂怎么定价，",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "C0F68230-A82C-4843-9FEB-1D412204EBC9",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "F189E694-AA04-454F-9085-D8886429EB6F",
           "isShortcutType" : false,
           "type" : "kd",
           "value" : "df"
@@ -224,8 +224,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:54:17Z",
-          "id" : "35240F7D-7CBB-414B-80F0-4CD1743EBD37",
+          "createdAt" : "2025-08-26T15:41:08Z",
+          "id" : "F317912F-9E83-488D-9D4D-70BAB53CE26F",
           "isShortcutType" : false,
           "latitude" : 37.46903135569384,
           "longitude" : 121.63467698281826,
@@ -241,12 +241,12 @@
       "id" : "81BE67D3-52D1-4ED5-9AC2-19B3A83FF7D7",
       "isCompound" : false,
       "layerId" : "BE26553C-F682-490C-8059-477C2D2DC11A",
-      "markdown" : "# gpt说指甲花水解的黄金时间是30min\n\n[youqu ](https:\/\/www.bilibili.com)\n",
+      "markdown" : "# gpt说指甲花水解的黄金时间是30min\n\n[youqu ](https:\/\/www.bilibili.com)",
       "tags" : [
 
       ],
       "text" : "基本流程",
-      "updatedAt" : "2025-08-26T14:56:58Z"
+      "updatedAt" : "2025-08-26T15:37:04Z"
     }
   ],
   "tagMappings" : [
