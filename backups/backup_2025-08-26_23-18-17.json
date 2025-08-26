@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-26T14:16:35Z",
-    "lastModified" : "2025-08-26T14:16:35Z",
+    "createdAt" : "2025-08-26T15:18:17Z",
+    "lastModified" : "2025-08-26T15:18:17Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -71,22 +71,22 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "9A0A8087-B663-4D38-BC69-4436ABC94C9D",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "8BB0E905-D788-4BE1-BC9A-F681F2AC10C7",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "吊龙"
         },
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "F763BF69-F676-4F67-B104-E22783B40A53",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "58C41C53-910D-4B68-8724-62200D279DFB",
           "isShortcutType" : false,
           "type" : "peach",
           "value" : "水蜜桃"
         },
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "2FFDB9B2-BE9A-47DC-BDE9-257E475D3244",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "9CB06EF5-B8B1-4394-ABCF-3C2711D37301",
           "isShortcutType" : false,
           "type" : "love",
           "value" : "依赖"
@@ -103,8 +103,8 @@
       "markdown" : "![参天大树.JPG](Images\/img_1755982844432.JPG)",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "7320F985-25D1-404F-90BD-793C6E19E3A9",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "0480FFF1-635E-438B-A51A-34AE9490A89A",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "雪花"
@@ -122,22 +122,22 @@
       "meaning" : "复合节点：包含 2 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "D9AA62E8-E65F-4A4F-BCC0-6514B6C2C6F3",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "719A3234-7230-419E-A2DA-14EDA34065EC",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "1级复合节点"
         },
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "D50D423B-03B2-443B-9498-BE3245A85FB7",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "FA6F6FAE-BBB6-41C1-A2D6-0EFB69EA7824",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单1"
         },
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "B029C501-50D7-4DBE-9A9C-0DB8D7541064",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "1ECA805F-290C-4786-96A5-E1E22E1D231D",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单2"
@@ -155,15 +155,15 @@
       "meaning" : "复合节点：包含 1 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "7BB5110F-331B-46F4-B97C-774B45029EFC",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "2EC4658F-59A7-42EC-9FF6-3D9AF2F0027F",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "2级复合节点"
         },
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "49ADBBF8-D3D5-4DCB-98B2-ABD7BA818CDD",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "64231EE1-8E2D-47F1-B6EA-776B73B2E778",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点"
@@ -181,15 +181,15 @@
       "meaning" : "复合节点：包含 复合节点kkk",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "37B44CDF-7C67-479E-A70B-DC61B09687D5",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "DF9C2D53-1FA5-45CD-9FD8-0CFD22D3876A",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "3级复合节点"
         },
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "46BCD27E-7474-4529-A495-BD9AECA1473E",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "E5386ED1-1683-463B-A8E1-C48CE5789FF7",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点kkk"
@@ -206,8 +206,8 @@
       "markdown" : "价格就是供给关系的桥梁\n\n我说的没错吧？？\n\n彻底搞懂怎么定价，",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "18B64003-89A3-49B4-8C3F-E3BE24872930",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "AD7E482D-030D-4C3E-85FC-E5D114388276",
           "isShortcutType" : false,
           "type" : "kd",
           "value" : "df"
@@ -224,8 +224,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-26T14:14:21Z",
-          "id" : "6BD9385B-4616-4329-B6D6-5B722222584F",
+          "createdAt" : "2025-08-26T15:17:01Z",
+          "id" : "D78E4387-F5A2-4081-A4C5-B4114C11329E",
           "isShortcutType" : false,
           "latitude" : 37.46903135569384,
           "longitude" : 121.63467698281826,
@@ -246,7 +246,7 @@
 
       ],
       "text" : "基本流程",
-      "updatedAt" : "2025-08-26T14:16:34Z"
+      "updatedAt" : "2025-08-26T15:18:16Z"
     }
   ],
   "tagMappings" : [
