@@ -681,32 +681,26 @@
       }
     }, true);
     
-    // 增强的超链接Command+点击处理
+    // 增强的超链接Command+点击处理 - 多层次拦截确保成功
     function handleLinkClick(e) {
       console.log('🔗 Click detected, metaKey:', e.metaKey, 'shiftKey:', e.shiftKey, 'target:', e.target, 'tagName:', e.target.tagName);
-      
-      // 立即测试：无论什么情况都尝试处理链接点击
-      if (e.target.tagName === 'A' || e.target.closest('a')) {
-        console.log('🔗 检测到链接点击 - 强制处理');
-      }
       
       // 支持Shift+点击或Command+点击
       if (!e.metaKey && !e.shiftKey) return;
       
       let target = e.target;
       let attempts = 0;
-      const maxAttempts = 10; // 防止无限循环
+      const maxAttempts = 10;
       
-      // 向上查找链接元素，更全面的搜索
+      // 向上查找链接元素
       while (target && target.tagName !== 'A' && target.parentElement && attempts < maxAttempts) {
         target = target.parentElement;
         attempts++;
         console.log('🔗 Checking parent:', target.tagName, target);
       }
       
-      // 也检查是否点击的是链接内的文本或其他元素
+      // 使用closest方法再次查找
       if (!target || target.tagName !== 'A') {
-        // 再次尝试从事件目标开始查找
         target = e.target.closest('a');
         console.log('🔗 Using closest() method, found:', target);
       }
@@ -715,10 +709,11 @@
         let url = target.href || target.getAttribute('href');
         console.log('🔗 Found link element:', target);
         console.log('🔗 Link href:', url);
-        console.log('🔗 Link innerHTML:', target.innerHTML);
         
         if (url && url.trim() !== '') {
           console.log('🔗 修饰键+点击链接:', url, '(metaKey:', e.metaKey, ', shiftKey:', e.shiftKey, ')');
+          
+          // 强制阻止所有默认行为和事件传播
           e.preventDefault();
           e.stopPropagation();
           e.stopImmediatePropagation();
@@ -738,31 +733,35 @@
             console.log('🔗 标准化后的URL:', url);
           }
           
-          try {
-            console.log('🔗 准备发送消息到原生代码...', { type: 'openURL', url: url });
-            if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.bridge) {
-              console.log('🔗 WebKit消息处理器可用，发送消息...');
-              window.webkit.messageHandlers.bridge.postMessage({ 
-                type: 'openURL',
-                url: url
-              });
-              console.log('✅ 已发送openURL消息到原生代码');
-            } else {
-              console.error('❌ WebKit消息处理器不可用');
-              console.log('🔗 尝试备选方案：window.open');
-              window.open(url, '_blank');
-              console.log('✅ 使用window.open打开链接');
-            }
-          } catch(err) {
-            console.error('❌ 发送openURL消息失败:', err);
+          // 异步发送消息，确保事件处理完成
+          setTimeout(() => {
             try {
-              console.log('🔗 备选方案：window.open');
-              window.open(url, '_blank');
-              console.log('✅ 备选方案：使用window.open打开链接');
-            } catch(backupErr) {
-              console.error('❌ 备选方案也失败:', backupErr);
+              console.log('🔗 准备发送消息到原生代码...', { type: 'openURL', url: url });
+              if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.bridge) {
+                console.log('🔗 WebKit消息处理器可用，发送消息...');
+                window.webkit.messageHandlers.bridge.postMessage({ 
+                  type: 'openURL',
+                  url: url
+                });
+                console.log('✅ 已发送openURL消息到原生代码');
+              } else {
+                console.error('❌ WebKit消息处理器不可用');
+                console.log('🔗 尝试备选方案：window.open');
+                window.open(url, '_blank');
+                console.log('✅ 使用window.open打开链接');
+              }
+            } catch(err) {
+              console.error('❌ 发送openURL消息失败:', err);
+              try {
+                console.log('🔗 备选方案：window.open');
+                window.open(url, '_blank');
+                console.log('✅ 备选方案：使用window.open打开链接');
+              } catch(backupErr) {
+                console.error('❌ 备选方案也失败:', backupErr);
+              }
             }
-          }
+          }, 0);
+          
           return false;
         } else {
           console.warn('🔗 链接元素存在但没有有效的URL:', target);
@@ -772,22 +771,71 @@
       }
     }
     
-    // 使用多种事件监听策略确保捕获
+    // 多重事件监听策略 - 确保在各种情况下都能拦截链接点击
+    
+    // 1. 在捕获阶段拦截，优先级最高
     document.addEventListener('click', handleLinkClick, true);
     
-    // 额外的全局点击监听器用于调试
-    document.addEventListener('click', function(e) {
-      console.log('🔗 [DEBUG] 全局点击检测:', e.target.tagName, e.target);
-      if (e.target.closest('a')) {
-        console.log('🔗 [DEBUG] 这是链接点击！href:', e.target.closest('a').href);
-      }
-    }, true);
+    // 2. 在冒泡阶段再次拦截，以防捕获阶段被阻止
+    document.addEventListener('click', handleLinkClick, false);
     
+    // 3. 使用Vditor编辑器的事件系统（如果可用）
+    if (window.vditor && window.vditor.element) {
+      window.vditor.element.addEventListener('click', handleLinkClick, true);
+    }
+    
+    // 4. 直接在document.body上监听，覆盖更广
+    if (document.body) {
+      document.body.addEventListener('click', handleLinkClick, true);
+    }
+    
+    // 5. 全局mousedown预处理，确保准备工作完成
     document.addEventListener('mousedown', function(e) {
       if ((e.metaKey || e.shiftKey) && e.target.closest('a')) {
         console.log('🔗 Mousedown on link detected, preparing for click', '(metaKey:', e.metaKey, ', shiftKey:', e.shiftKey, ')');
+        // 预处理：标记这个元素即将被点击
+        e.target.closest('a').dataset.aboutToClick = 'true';
       }
     }, true);
+    
+    // 6. 额外的全局点击监听器用于调试和备用处理
+    document.addEventListener('click', function(e) {
+      console.log('🔗 [DEBUG] 全局点击检测:', e.target.tagName, e.target, 'metaKey:', e.metaKey, 'shiftKey:', e.shiftKey);
+      
+      if (e.target.closest('a')) {
+        const link = e.target.closest('a');
+        console.log('🔗 [DEBUG] 这是链接点击！href:', link.href);
+        
+        // 如果有修饰键但没有被处理，强制处理
+        if ((e.metaKey || e.shiftKey) && !e.defaultPrevented) {
+          console.log('🔗 [BACKUP] 备用处理器激活');
+          handleLinkClick(e);
+        }
+      }
+    }, true);
+    
+    // 7. 定时器方式的深度拦截 - 在Vditor加载完成后重新绑定事件
+    setTimeout(() => {
+      console.log('🔗 延迟绑定链接处理器...');
+      // 查找所有可能的容器并绑定事件
+      const containers = [
+        document,
+        document.body,
+        document.querySelector('.vditor'),
+        document.querySelector('.vditor-reset'),
+        document.querySelector('#vditor')
+      ].filter(Boolean);
+      
+      containers.forEach(container => {
+        console.log('🔗 在容器上绑定事件:', container);
+        container.addEventListener('click', function(e) {
+          if ((e.metaKey || e.shiftKey) && e.target.closest('a')) {
+            console.log('🔗 [DEEP] 深度拦截器触发');
+            handleLinkClick(e);
+          }
+        }, true);
+      });
+    }, 1000);
     
     // 图片和其他元素的点击处理
     document.addEventListener('click', function(e) {
