@@ -685,6 +685,11 @@
     function handleLinkClick(e) {
       console.log('🔗 Click detected, metaKey:', e.metaKey, 'shiftKey:', e.shiftKey, 'target:', e.target, 'tagName:', e.target.tagName);
       
+      // 立即测试：无论什么情况都尝试处理链接点击
+      if (e.target.tagName === 'A' || e.target.closest('a')) {
+        console.log('🔗 检测到链接点击 - 强制处理');
+      }
+      
       // 支持Shift+点击或Command+点击
       if (!e.metaKey && !e.shiftKey) return;
       
