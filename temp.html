@@ -774,6 +774,15 @@
     
     // 使用多种事件监听策略确保捕获
     document.addEventListener('click', handleLinkClick, true);
+    
+    // 额外的全局点击监听器用于调试
+    document.addEventListener('click', function(e) {
+      console.log('🔗 [DEBUG] 全局点击检测:', e.target.tagName, e.target);
+      if (e.target.closest('a')) {
+        console.log('🔗 [DEBUG] 这是链接点击！href:', e.target.closest('a').href);
+      }
+    }, true);
+    
     document.addEventListener('mousedown', function(e) {
       if ((e.metaKey || e.shiftKey) && e.target.closest('a')) {
         console.log('🔗 Mousedown on link detected, preparing for click', '(metaKey:', e.metaKey, ', shiftKey:', e.shiftKey, ')');
