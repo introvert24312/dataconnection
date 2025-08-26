@@ -19,7 +19,7 @@
     "createdAt" : "2025-08-22T13:02:19Z",
     "displayName" : "你呢",
     "id" : "83FD4C08-A375-4234-8304-4CE55CC96A75",
-    "isActive" : false,
+    "isActive" : true,
     "isCompound" : false,
     "name" : "你呢"
   },
@@ -44,7 +44,7 @@
     "createdAt" : "2025-08-26T13:14:19Z",
     "displayName" : "染发",
     "id" : "BE26553C-F682-490C-8059-477C2D2DC11A",
-    "isActive" : true,
+    "isActive" : false,
     "isCompound" : false,
     "name" : "染发"
   }

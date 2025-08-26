@@ -683,10 +683,10 @@
     
     // 增强的超链接Command+点击处理
     function handleLinkClick(e) {
-      console.log('🔗 Click detected, metaKey:', e.metaKey, 'target:', e.target, 'tagName:', e.target.tagName);
+      console.log('🔗 Click detected, metaKey:', e.metaKey, 'shiftKey:', e.shiftKey, 'target:', e.target, 'tagName:', e.target.tagName);
       
-      // 只处理Command+点击
-      if (!e.metaKey) return;
+      // 支持Shift+点击或Command+点击
+      if (!e.metaKey && !e.shiftKey) return;
       
       let target = e.target;
       let attempts = 0;
@@ -713,7 +713,7 @@
         console.log('🔗 Link innerHTML:', target.innerHTML);
         
         if (url && url.trim() !== '') {
-          console.log('🔗 Command+点击链接:', url);
+          console.log('🔗 修饰键+点击链接:', url, '(metaKey:', e.metaKey, ', shiftKey:', e.shiftKey, ')');
           e.preventDefault();
           e.stopPropagation();
           e.stopImmediatePropagation();
@@ -770,8 +770,8 @@
     // 使用多种事件监听策略确保捕获
     document.addEventListener('click', handleLinkClick, true);
     document.addEventListener('mousedown', function(e) {
-      if (e.metaKey && e.target.closest('a')) {
-        console.log('🔗 Mousedown on link detected, preparing for click');
+      if ((e.metaKey || e.shiftKey) && e.target.closest('a')) {
+        console.log('🔗 Mousedown on link detected, preparing for click', '(metaKey:', e.metaKey, ', shiftKey:', e.shiftKey, ')');
       }
     }, true);
     
