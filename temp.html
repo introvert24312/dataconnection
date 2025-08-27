@@ -220,6 +220,38 @@
             return false;
           }
           
+          // Command+K: 转发给原生App处理 - 命令面板
+          if (e.metaKey && (e.key === 'k' || e.key === 'K')) {
+            console.log('🔥 拦截 Command+K 快捷键，转发给App处理');
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            
+            try {
+              window.webkit?.messageHandlers?.bridge?.postMessage({ 
+                type: 'commandK'
+              });
+            } catch(err) {
+              console.error('无法发送 Command+K 事件:', err);
+            }
+            return false;
+          }
+          
+          // Command+I: 转发给原生App处理 - 快速添加节点
+          if (e.metaKey && (e.key === 'i' || e.key === 'I')) {
+            console.log('🔥 拦截 Command+I 快捷键，转发给App处理');
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            
+            try {
+              window.webkit?.messageHandlers?.bridge?.postMessage({ 
+                type: 'commandI'
+              });
+            } catch(err) {
+              console.error('无法发送 Command+I 事件:', err);
+            }
+            return false;
+          }
+          
           // Command+D: 转发给原生App处理 (全屏详情面板)
           if (e.metaKey && (e.key === 'd' || e.key === 'D')) {
             console.log('🔥 拦截 Command+D 快捷键，转发给App处理');
