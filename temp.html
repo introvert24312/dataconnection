@@ -137,6 +137,46 @@
       });
     }
 
+    // 全局图片上传回调函数 - 在Vditor初始化前定义，避免被覆盖
+    window.__onImageSaved = (name, path, id) => {
+      console.log(`🖼️ __onImageSaved 被调用: name=${name}, path=${path}, id=${id}`);
+      
+      // 使用唯一标记替换，避免替换错误的图片
+      const content = window.vditor ? window.vditor.getValue() : '';
+      console.log(`🖼️ 当前编辑器内容长度: ${content.length}`);
+      console.log(`🖼️ 当前编辑器内容预览: ${content.substring(0, 200)}...`);
+      
+      const targetMark = `![加载中...](${id})`;
+      console.log(`🖼️ 查找目标标记: ${targetMark}`);
+      
+      const hasTargetMark = content.includes(targetMark);
+      console.log(`🖼️ 是否找到目标标记: ${hasTargetMark}`);
+      
+      if (hasTargetMark && window.vditor) {
+        // 从原始文件名中提取，不使用传入的name参数
+        const fileName = name.split('/').pop() || name; // 获取文件名部分
+        const updated = content.replace(targetMark, `![${fileName}](${path})`);
+        console.log(`🖼️ 图片上传成功，替换: ${targetMark} -> ![${fileName}](${path})`);
+        console.log(`🖼️ 更新后内容长度: ${updated.length}`);
+        window.vditor.setValue(updated);
+        console.log(`🖼️ vditor.setValue 执行完成`);
+      } else {
+        console.error(`🖼️ 未找到目标标记: ${targetMark} 在内容中，或vditor未初始化`);
+        console.error(`🖼️ vditor状态: ${window.vditor ? '已初始化' : '未初始化'}`);
+      }
+    };
+    
+    window.__onImageSaveError = (name, error, id) => {
+      console.error(`🖼️ 图片保存失败: ${error}`);
+      alert(`保存图片失败: ${error}`);
+      if (window.vditor) {
+        const content = window.vditor.getValue();
+        const targetMark = `![加载中...](${id})`;
+        const updated = content.replace(targetMark, '');
+        window.vditor.setValue(updated);
+      }
+    };
+
     // Vditor 初始化（固定浅色占位；真实主题由 Native 注入）
     const vditor = new Vditor('vditor', {
       mode: 'ir',
@@ -329,39 +369,8 @@
                 loadingId: loadingId
               });
               
-              // 设置回调处理 - 使用唯一标记替换
-              window.__onImageSaved = (name, path, id) => {
-                console.log(`🖼️ __onImageSaved 被调用: name=${name}, path=${path}, id=${id}`);
-                
-                // 使用唯一标记替换，避免替换错误的图片
-                const content = vditor.getValue();
-                console.log(`🖼️ 当前编辑器内容长度: ${content.length}`);
-                console.log(`🖼️ 当前编辑器内容预览: ${content.substring(0, 200)}...`);
-                
-                const targetMark = `![加载中...](${id})`;
-                console.log(`🖼️ 查找目标标记: ${targetMark}`);
-                
-                const hasTargetMark = content.includes(targetMark);
-                console.log(`🖼️ 是否找到目标标记: ${hasTargetMark}`);
-                
-                if (hasTargetMark) {
-                  const updated = content.replace(targetMark, `![${file.name}](${path})`);
-                  console.log(`🖼️ 图片上传成功，替换: ${targetMark} -> ![${file.name}](${path})`);
-                  console.log(`🖼️ 更新后内容长度: ${updated.length}`);
-                  vditor.setValue(updated);
-                  console.log(`🖼️ vditor.setValue 执行完成`);
-                } else {
-                  console.error(`🖼️ 未找到目标标记: ${targetMark} 在内容中`);
-                }
-              };
-              
-              window.__onImageSaveError = (name, error, id) => {
-                alert(`保存图片失败: ${error}`);
-                const content = vditor.getValue();
-                const targetMark = `![加载中...](${id})`;
-                const updated = content.replace(targetMark, '');
-                vditor.setValue(updated);
-              };
+              // 回调函数已在全局定义，无需重新设置
+              console.log(`🖼️ 图片上传请求已发送，等待回调执行...`);
             };
             
             reader.readAsDataURL(file);
