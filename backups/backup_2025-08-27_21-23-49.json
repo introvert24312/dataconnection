@@ -1,0 +1,455 @@
+{
+  "config" : {
+    "appVersion" : "1.0",
+    "createdAt" : "2025-08-27T13:23:49Z",
+    "lastModified" : "2025-08-27T13:23:49Z",
+    "version" : "1.0"
+  },
+  "layers" : [
+    {
+      "childLayerIds" : [
+
+      ],
+      "color" : "blue",
+      "createdAt" : "2025-08-21T17:49:08Z",
+      "displayName" : "好",
+      "id" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "isActive" : true,
+      "isCompound" : false,
+      "name" : "好"
+    },
+    {
+      "childLayerIds" : [
+
+      ],
+      "color" : "blue",
+      "createdAt" : "2025-08-22T13:02:19Z",
+      "displayName" : "你呢",
+      "id" : "83FD4C08-A375-4234-8304-4CE55CC96A75",
+      "isActive" : false,
+      "isCompound" : false,
+      "name" : "你呢"
+    },
+    {
+      "childLayerIds" : [
+        "83FD4C08-A375-4234-8304-4CE55CC96A75",
+        "86B9DBDB-832F-480F-B155-769B7858D158"
+      ],
+      "color" : "purple",
+      "createdAt" : "2025-08-22T13:02:40Z",
+      "displayName" : "超级",
+      "id" : "9E9E75EF-FBE4-4EBF-B9E0-4AE4C49A9612",
+      "isActive" : false,
+      "isCompound" : true,
+      "name" : "超级"
+    },
+    {
+      "childLayerIds" : [
+
+      ],
+      "color" : "blue",
+      "createdAt" : "2025-08-26T13:14:19Z",
+      "displayName" : "染发",
+      "id" : "BE26553C-F682-490C-8059-477C2D2DC11A",
+      "isActive" : false,
+      "isCompound" : false,
+      "name" : "染发"
+    }
+  ],
+  "metadata" : {
+    "syncEnabled" : true,
+    "totalLayers" : 4,
+    "totalNodes" : 10,
+    "totalTags" : 15
+  },
+  "nodes" : [
+    {
+      "createdAt" : "2025-08-22T06:21:00Z",
+      "id" : "5152BAAC-4115-4639-A554-15E3E4141D06",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "B86C3169-9BF8-4AD4-8E6D-450C2D45DFA8",
+          "isShortcutType" : false,
+          "type" : "beef",
+          "value" : "吊龙"
+        },
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "F7884D62-CC38-4F9D-914E-7795BBA42883",
+          "isShortcutType" : false,
+          "type" : "peach",
+          "value" : "水蜜桃"
+        },
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "072AB874-C3A1-4CDF-9E9D-8446FA9A8E75",
+          "isShortcutType" : false,
+          "type" : "love",
+          "value" : "依赖"
+        }
+      ],
+      "text" : "菜单1",
+      "updatedAt" : "2025-08-22T11:02:47Z"
+    },
+    {
+      "createdAt" : "2025-08-22T06:21:28Z",
+      "id" : "89026CDC-1F1B-48BB-8774-F4E7662757E0",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "![参天大树.JPG](Images\/img_1755982844432.JPG)",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "8A59B0B9-120B-448F-92FC-9619C0E2E80F",
+          "isShortcutType" : false,
+          "type" : "beef",
+          "value" : "雪花"
+        }
+      ],
+      "text" : "菜单2",
+      "updatedAt" : "2025-08-27T11:17:55Z"
+    },
+    {
+      "createdAt" : "2025-08-22T10:29:25Z",
+      "id" : "856E988C-2E07-4774-A264-087EBB99F467",
+      "isCompound" : true,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "meaning" : "复合节点：包含 2 个子节点",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "3A03D87C-FBFB-468D-A36B-8C97B2F6E0A4",
+          "isShortcutType" : false,
+          "type" : "compound",
+          "value" : "1级复合节点"
+        },
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "6C0F243D-ED99-4A29-8F3F-114C973E68A9",
+          "isShortcutType" : false,
+          "type" : "child",
+          "value" : "菜单1"
+        },
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "6E64A7CE-17C0-42CD-A03E-25BE9C73B417",
+          "isShortcutType" : false,
+          "type" : "child",
+          "value" : "菜单2"
+        }
+      ],
+      "text" : "复合节点",
+      "updatedAt" : "2025-08-22T11:02:47Z"
+    },
+    {
+      "createdAt" : "2025-08-22T11:03:24Z",
+      "id" : "BBEBD7E3-2000-44F9-98B5-66DF0C203E11",
+      "isCompound" : true,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "meaning" : "复合节点：包含 1 个子节点",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "B4413C3B-6935-4DC6-B3C9-C0DF2C84F24C",
+          "isShortcutType" : false,
+          "type" : "compound",
+          "value" : "2级复合节点"
+        },
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "FF9E6BD9-4B0E-4DA2-84EB-123DD607944C",
+          "isShortcutType" : false,
+          "type" : "child",
+          "value" : "复合节点"
+        }
+      ],
+      "text" : "复合节点kkk",
+      "updatedAt" : "2025-08-22T11:03:24Z"
+    },
+    {
+      "createdAt" : "2025-08-22T11:04:20Z",
+      "id" : "7FF75D25-BCEA-4727-874E-7E23985962A9",
+      "isCompound" : true,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "meaning" : "复合节点：包含 复合节点kkk",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "0995DA50-CB5E-4DB7-A3BC-CA10ECEBF023",
+          "isShortcutType" : false,
+          "type" : "compound",
+          "value" : "3级复合节点"
+        },
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "A7A51D31-CE3E-44E8-98A0-B8D7ECC42957",
+          "isShortcutType" : false,
+          "type" : "child",
+          "value" : "复合节点kkk"
+        }
+      ],
+      "text" : "有趣",
+      "updatedAt" : "2025-08-22T11:04:20Z"
+    },
+    {
+      "createdAt" : "2025-08-24T05:53:58Z",
+      "id" : "00D5941B-DE84-45F7-ACB0-F17A750F12C6",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "价格就是供给关系的桥梁\n\n我说的没错吧？？\n\n彻底搞懂怎么定价，",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "5E8B4765-9731-4A3C-BE4F-FFF3F22BC4D1",
+          "isShortcutType" : false,
+          "type" : "kd",
+          "value" : "df"
+        }
+      ],
+      "text" : "是离开对方",
+      "updatedAt" : "2025-08-24T07:26:32Z"
+    },
+    {
+      "createdAt" : "2025-08-24T12:04:04Z",
+      "id" : "E8F1120A-0CD6-4C64-B9A2-019EDBFE5DE0",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "![img_1756301005245.JPG](Images\/img_1756301005245.JPG)\n\n考六级\n\n![img_1756297331152.JPG](Images\/img_1756297331152.JPG)\n\n# sdlkfj\n\n![img_1756297357849.JPG](Images\/img_1756297357849.JPG)\n\n速度来看风景速度\n",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "04368B22-0C19-40CC-9EB4-7CB4AB015733",
+          "isShortcutType" : false,
+          "latitude" : 37.46903135569384,
+          "longitude" : 121.63467698281826,
+          "type" : "loc",
+          "value" : "养马岛租车"
+        }
+      ],
+      "text" : "辣椒圈",
+      "updatedAt" : "2025-08-27T13:23:48Z"
+    },
+    {
+      "createdAt" : "2025-08-26T13:14:53Z",
+      "id" : "81BE67D3-52D1-4ED5-9AC2-19B3A83FF7D7",
+      "isCompound" : false,
+      "layerId" : "BE26553C-F682-490C-8059-477C2D2DC11A",
+      "markdown" : "# gpt说指甲花水解的黄金时间是30min\n\n[youqu ](https:\/\/www.bilibili.com)",
+      "tags" : [
+
+      ],
+      "text" : "基本流程",
+      "updatedAt" : "2025-08-26T16:27:13Z"
+    },
+    {
+      "createdAt" : "2025-08-27T07:00:24Z",
+      "id" : "A8013248-3308-47FB-A7A1-E291F928F5FF",
+      "isCompound" : false,
+      "layerId" : "83FD4C08-A375-4234-8304-4CE55CC96A75",
+      "markdown" : "[已修复]",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "B60423F2-21A9-46A9-A0AD-B93B49662732",
+          "isShortcutType" : true,
+          "type" : "i",
+          "value" : "史蒂夫"
+        }
+      ],
+      "text" : "有趣啊",
+      "updatedAt" : "2025-08-27T09:49:06Z"
+    },
+    {
+      "createdAt" : "2025-08-27T12:24:27Z",
+      "id" : "7F37041C-7F20-4B97-BF97-213E27228276",
+      "isCompound" : false,
+      "layerId" : "83FD4C08-A375-4234-8304-4CE55CC96A75",
+      "markdown" : "",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-27T13:19:58Z",
+          "id" : "70A27797-FA1F-4832-8CC9-A6E77DC5FC58",
+          "isShortcutType" : false,
+          "type" : "kd",
+          "value" : "sdf"
+        }
+      ],
+      "text" : "时尚大方",
+      "updatedAt" : "2025-08-27T12:24:28Z"
+    }
+  ],
+  "tagMappings" : [
+    {
+      "id" : "69FE3F68-0BB3-48F8-BF18-24939F509697",
+      "key" : "loc",
+      "typeName" : "位置"
+    },
+    {
+      "id" : "9642D74A-5C15-4AC4-B01F-24B9C543975C",
+      "key" : "compound",
+      "typeName" : "复合节点"
+    },
+    {
+      "id" : "DCFDEA1B-A458-48EF-B692-7C86E781A84B",
+      "key" : "child",
+      "typeName" : "子节点"
+    },
+    {
+      "id" : "FEF6ED27-AB7C-4148-B61A-D2235D8BD700",
+      "key" : "root",
+      "typeName" : "词根"
+    },
+    {
+      "id" : "EC3EF234-A276-49DF-9D90-6E447FC4C72D",
+      "key" : "beef",
+      "typeName" : "牛肉类型"
+    },
+    {
+      "id" : "EC7CD4E5-DEA3-4608-B5E6-0117851DC713",
+      "key" : "kind",
+      "typeName" : "kind"
+    },
+    {
+      "id" : "D6892419-5F53-42E6-8614-7A3C0AF0BFFD",
+      "key" : "lk",
+      "typeName" : "lk"
+    },
+    {
+      "id" : "94021516-2EFA-4098-AA5B-8D963D92C1EF",
+      "key" : "fr",
+      "typeName" : "水果品种"
+    },
+    {
+      "id" : "DB7B8BB1-DEE3-41D7-A047-D36B620342C5",
+      "key" : "果盘1",
+      "typeName" : "果盘1"
+    },
+    {
+      "id" : "39380BAB-780D-481F-A04D-1CD17B7DB762",
+      "key" : "菜单1",
+      "typeName" : "菜单1"
+    },
+    {
+      "id" : "6AC1D498-7A49-44CF-BD64-4A5EE0B6689B",
+      "key" : "peach",
+      "typeName" : "桃子"
+    },
+    {
+      "id" : "3F864934-B7BD-4ED5-8CDB-5BB681EA30B5",
+      "key" : "love",
+      "typeName" : "恋爱"
+    },
+    {
+      "id" : "3C6A4F75-1ADF-4E78-9454-FD5F92D42467",
+      "key" : "kk",
+      "typeName" : "史蒂夫"
+    },
+    {
+      "id" : "D0B14A3E-2AC8-416D-B3B0-03B76E702CBE",
+      "key" : "lkkk",
+      "typeName" : "lkkk"
+    },
+    {
+      "id" : "2AF657C3-E879-4F42-8A7A-2E19D5C70EF3",
+      "key" : "jjkk",
+      "typeName" : "尼玛的"
+    },
+    {
+      "id" : "D95F28BF-2C71-416E-9937-23778EADBCEF",
+      "key" : "sd",
+      "typeName" : "史蒂夫收到"
+    },
+    {
+      "id" : "C7F68C45-A088-4E5F-87DC-7605D0594543",
+      "key" : "dfk",
+      "typeName" : "dfk"
+    },
+    {
+      "id" : "075CD211-A648-446A-9147-46FD05800C54",
+      "key" : "dlf",
+      "typeName" : "dlf"
+    },
+    {
+      "id" : "57E52304-4B4B-4ADD-B2D5-35D6CD85CD91",
+      "key" : "oo",
+      "typeName" : "好看"
+    },
+    {
+      "id" : "CA5D71A9-8097-4C0E-B1EB-2AE0E1906327",
+      "key" : "kd",
+      "typeName" : "sdf"
+    },
+    {
+      "id" : "A93E78D4-7C30-496C-A5EB-B898548E7CB8",
+      "key" : "sdf",
+      "typeName" : "sd"
+    },
+    {
+      "id" : "8A137AA9-0F0A-471D-A9B3-45460C67D7BA",
+      "key" : "ksldfj",
+      "typeName" : "ksldfj"
+    },
+    {
+      "id" : "FF1BFF5F-35D2-49DA-A8F4-8E8FCA80CC5B",
+      "key" : "ksdf",
+      "typeName" : "sdsdffsdfd"
+    },
+    {
+      "id" : "A4F7E0E4-4E88-4D0E-93C8-62BCFDD50D5B",
+      "key" : "sdsf",
+      "typeName" : "sdsf"
+    },
+    {
+      "id" : "6C0DA61D-257E-4BA1-A632-0D803FA3E893",
+      "key" : "sdfs",
+      "typeName" : "sdfs"
+    },
+    {
+      "id" : "5F8F7B29-EB4C-49C4-82B7-A954FBFAEA81",
+      "key" : "sdssf",
+      "typeName" : "sdssf"
+    },
+    {
+      "id" : "30A4738E-BFE2-403E-A6BA-86173E422628",
+      "key" : "sdfsd",
+      "typeName" : "sd"
+    },
+    {
+      "id" : "50EFA552-CE44-4E14-A489-BD0B2B5828CB",
+      "key" : "kdsfj",
+      "typeName" : "kdsfj"
+    },
+    {
+      "id" : "C7302F3A-C250-4840-BF6B-E70B21C6A077",
+      "key" : "asdf",
+      "typeName" : "sdf"
+    },
+    {
+      "id" : "3A6AD186-53C1-4884-B933-E1105815DD71",
+      "key" : "helo",
+      "typeName" : "helo"
+    },
+    {
+      "id" : "0D436F9E-4DA2-47E3-A5F2-8219E377F5C8",
+      "key" : "k",
+      "typeName" : "k"
+    },
+    {
+      "id" : "D52A9950-20C3-49DA-B78E-98718006EF4A",
+      "key" : "kl",
+      "typeName" : "kl"
+    },
+    {
+      "id" : "1815253C-DA4B-48B0-A6FF-3AB66A57B9E0",
+      "key" : "i",
+      "typeName" : "i"
+    }
+  ]
+}
