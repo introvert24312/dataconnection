@@ -7,7 +7,7 @@
     "createdAt" : "2025-08-21T17:49:08Z",
     "displayName" : "好",
     "id" : "86B9DBDB-832F-480F-B155-769B7858D158",
-    "isActive" : true,
+    "isActive" : false,
     "isCompound" : false,
     "name" : "好"
   },
@@ -47,5 +47,17 @@
     "isActive" : false,
     "isCompound" : false,
     "name" : "染发"
+  },
+  {
+    "childLayerIds" : [
+
+    ],
+    "color" : "blue",
+    "createdAt" : "2025-08-27T16:31:56Z",
+    "displayName" : "我喜欢的音乐",
+    "id" : "D3165849-185C-45EA-8025-A6E9904EC843",
+    "isActive" : true,
+    "isCompound" : false,
+    "name" : "我喜欢的音乐"
   }
 ]
