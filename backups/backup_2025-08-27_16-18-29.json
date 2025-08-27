@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-27T07:00:05Z",
-    "lastModified" : "2025-08-27T07:00:05Z",
+    "createdAt" : "2025-08-27T08:18:29Z",
+    "lastModified" : "2025-08-27T08:18:29Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -59,8 +59,8 @@
   "metadata" : {
     "syncEnabled" : true,
     "totalLayers" : 4,
-    "totalNodes" : 8,
-    "totalTags" : 13
+    "totalNodes" : 9,
+    "totalTags" : 14
   },
   "nodes" : [
     {
@@ -71,22 +71,22 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "A7F5BD54-8D46-4E14-83B0-D5AB5E3A1355",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "3E05E051-9C64-4CBA-9DDB-72BF40C1B143",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "吊龙"
         },
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "509319A4-40B0-4EC7-8E07-448EACF0FAD1",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "F851AC7F-E4FA-44A4-A449-392A3BE09239",
           "isShortcutType" : false,
           "type" : "peach",
           "value" : "水蜜桃"
         },
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "A1EEBB1C-7AFD-4D8B-901D-205D5E0EF87B",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "72FF29E9-1D72-46B2-AE7A-5364150F0E55",
           "isShortcutType" : false,
           "type" : "love",
           "value" : "依赖"
@@ -103,8 +103,8 @@
       "markdown" : "![参天大树.JPG](Images\/img_1755982844432.JPG)",
       "tags" : [
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "1903CC7D-6F5A-4C84-84BA-F61D7748D015",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "EE557C2E-28D7-44AE-950F-ADE09437AD27",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "雪花"
@@ -122,22 +122,22 @@
       "meaning" : "复合节点：包含 2 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "67B4B626-3101-4B41-B902-E4A4598BC444",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "885B5837-0AA7-4407-A62A-5A3F657D2295",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "1级复合节点"
         },
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "65FEE120-DA1B-46AD-B7CE-C9BC61BB576F",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "0C338FFC-D75B-4F42-A940-8087D1AEFFF6",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单1"
         },
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "9887612B-B3AD-4C50-9189-5623BCE76D05",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "D35EB26F-F3C4-4320-9A71-9564291F4E68",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单2"
@@ -155,15 +155,15 @@
       "meaning" : "复合节点：包含 1 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "7B6AC76B-68D2-4E81-B255-1961F4ECBFDB",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "9D9FB0AC-5BEF-427D-9321-C82E0D2E1246",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "2级复合节点"
         },
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "9A875157-9E30-48CD-A787-0916D19AB36B",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "7B839DE6-D576-4D01-BDA8-3698237C9551",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点"
@@ -181,15 +181,15 @@
       "meaning" : "复合节点：包含 复合节点kkk",
       "tags" : [
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "5C204385-2BF3-432F-980C-E4742721F238",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "628CD6ED-2F02-4BB2-ADDB-7CD1F659D25B",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "3级复合节点"
         },
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "B432BCA6-A2E9-4262-8D9C-F483AD5D6F10",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "302798A6-4A50-46DD-841C-5D30F1D4D9E4",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点kkk"
@@ -206,8 +206,8 @@
       "markdown" : "价格就是供给关系的桥梁\n\n我说的没错吧？？\n\n彻底搞懂怎么定价，",
       "tags" : [
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "E31A3BFB-A4CD-4167-90C7-381E04501C95",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "8BF366DD-1C20-4203-BB41-28716EC76009",
           "isShortcutType" : false,
           "type" : "kd",
           "value" : "df"
@@ -224,8 +224,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-27T06:59:25Z",
-          "id" : "C824B45A-144B-4359-A287-E76D85BCFDE0",
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "F47DD069-0C22-4B81-A850-1CE62B0E18B3",
           "isShortcutType" : false,
           "latitude" : 37.46903135569384,
           "longitude" : 121.63467698281826,
@@ -247,6 +247,24 @@
       ],
       "text" : "基本流程",
       "updatedAt" : "2025-08-26T16:27:13Z"
+    },
+    {
+      "createdAt" : "2025-08-27T07:00:24Z",
+      "id" : "A8013248-3308-47FB-A7A1-E291F928F5FF",
+      "isCompound" : false,
+      "layerId" : "83FD4C08-A375-4234-8304-4CE55CC96A75",
+      "markdown" : "",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-27T08:18:28Z",
+          "id" : "B8F8F715-9A4D-4324-982D-E52D7FFC0896",
+          "isShortcutType" : true,
+          "type" : "i",
+          "value" : "史蒂夫"
+        }
+      ],
+      "text" : "有趣啊",
+      "updatedAt" : "2025-08-27T07:00:24Z"
     }
   ],
   "tagMappings" : [
@@ -409,6 +427,11 @@
       "id" : "D52A9950-20C3-49DA-B78E-98718006EF4A",
       "key" : "kl",
       "typeName" : "kl"
+    },
+    {
+      "id" : "1815253C-DA4B-48B0-A6FF-3AB66A57B9E0",
+      "key" : "i",
+      "typeName" : "i"
     }
   ]
 }
