@@ -331,12 +331,28 @@
               
               // 设置回调处理 - 使用唯一标记替换
               window.__onImageSaved = (name, path, id) => {
+                console.log(`🖼️ __onImageSaved 被调用: name=${name}, path=${path}, id=${id}`);
+                
                 // 使用唯一标记替换，避免替换错误的图片
                 const content = vditor.getValue();
+                console.log(`🖼️ 当前编辑器内容长度: ${content.length}`);
+                console.log(`🖼️ 当前编辑器内容预览: ${content.substring(0, 200)}...`);
+                
                 const targetMark = `![加载中...](${id})`;
-                const updated = content.replace(targetMark, `![${file.name}](${path})`);
-                console.log(`图片上传成功，替换: ${targetMark} -> ![${file.name}](${path})`);
-                vditor.setValue(updated);
+                console.log(`🖼️ 查找目标标记: ${targetMark}`);
+                
+                const hasTargetMark = content.includes(targetMark);
+                console.log(`🖼️ 是否找到目标标记: ${hasTargetMark}`);
+                
+                if (hasTargetMark) {
+                  const updated = content.replace(targetMark, `![${file.name}](${path})`);
+                  console.log(`🖼️ 图片上传成功，替换: ${targetMark} -> ![${file.name}](${path})`);
+                  console.log(`🖼️ 更新后内容长度: ${updated.length}`);
+                  vditor.setValue(updated);
+                  console.log(`🖼️ vditor.setValue 执行完成`);
+                } else {
+                  console.error(`🖼️ 未找到目标标记: ${targetMark} 在内容中`);
+                }
               };
               
               window.__onImageSaveError = (name, error, id) => {
