@@ -309,8 +309,12 @@
             const ext = file.name.split('.').pop() || 'jpg';
             const fileName = `img_${timestamp}.${ext}`;
             
+            // 生成唯一的加载标记，避免多个图片上传时冲突
+            const loadingId = `loading_${fileName}_${timestamp}`;
+            const loadingMark = `![加载中...](${loadingId})`;
+            
             // 显示加载提示
-            vditor.insertValue(`![加载中...]()`);
+            vditor.insertValue(loadingMark);
             
             // 读取文件
             const reader = new FileReader();
@@ -321,21 +325,25 @@
               window.webkit?.messageHandlers?.bridge?.postMessage({ 
                 type: 'saveImage',
                 fileName: fileName,
-                data: base64
+                data: base64,
+                loadingId: loadingId
               });
               
-              // 设置回调处理
-              window.__onImageSaved = (name, path) => {
-                // 替换加载提示为实际图片路径（使用相对路径）
+              // 设置回调处理 - 使用唯一标记替换
+              window.__onImageSaved = (name, path, id) => {
+                // 使用唯一标记替换，避免替换错误的图片
                 const content = vditor.getValue();
-                const updated = content.replace('![加载中...]()', `![${file.name}](${path})`);
+                const targetMark = `![加载中...](${id})`;
+                const updated = content.replace(targetMark, `![${file.name}](${path})`);
+                console.log(`图片上传成功，替换: ${targetMark} -> ![${file.name}](${path})`);
                 vditor.setValue(updated);
               };
               
-              window.__onImageSaveError = (name, error) => {
+              window.__onImageSaveError = (name, error, id) => {
                 alert(`保存图片失败: ${error}`);
                 const content = vditor.getValue();
-                const updated = content.replace('![加载中...]()', '');
+                const targetMark = `![加载中...](${id})`;
+                const updated = content.replace(targetMark, '');
                 vditor.setValue(updated);
               };
             };
