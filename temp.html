@@ -137,39 +137,32 @@
       });
     }
 
-    // 全局图片上传回调函数 - 在Vditor初始化前定义，避免被覆盖
+    // 🚀 精简的回调函数 - 仅用于调试和兼容性
     window.__onImageSaved = (name, path, id) => {
-      console.log(`🖼️ __onImageSaved 被调用: name=${name}, path=${path}, id=${id}`);
+      console.log(`🖼️ [传统模式] __onImageSaved 被调用: name=${name}, path=${path}, id=${id}`);
       
-      // 使用唯一标记替换，避免替换错误的图片
-      const content = window.vditor ? window.vditor.getValue() : '';
-      console.log(`🖼️ 当前编辑器内容长度: ${content.length}`);
-      console.log(`🖼️ 当前编辑器内容预览: ${content.substring(0, 200)}...`);
-      
-      const targetMark = `![加载中...](${id})`;
-      console.log(`🖼️ 查找目标标记: ${targetMark}`);
-      
-      const hasTargetMark = content.includes(targetMark);
-      console.log(`🖼️ 是否找到目标标记: ${hasTargetMark}`);
-      
-      if (hasTargetMark && window.vditor) {
-        // 从原始文件名中提取，不使用传入的name参数
-        const fileName = name.split('/').pop() || name; // 获取文件名部分
-        const updated = content.replace(targetMark, `![${fileName}](${path})`);
-        console.log(`🖼️ 图片上传成功，替换: ${targetMark} -> ![${fileName}](${path})`);
-        console.log(`🖼️ 更新后内容长度: ${updated.length}`);
-        window.vditor.setValue(updated);
-        console.log(`🖼️ vditor.setValue 执行完成`);
+      // 仅在传统模式下处理loading占位符替换
+      if (id && id !== '') {
+        const content = window.vditor ? window.vditor.getValue() : '';
+        const targetMark = `![加载中...](${id})`;
+        
+        if (content.includes(targetMark) && window.vditor) {
+          const fileName = name.split('/').pop() || name;
+          const updated = content.replace(targetMark, `![${fileName}](${path})`);
+          window.vditor.setValue(updated);
+          console.log(`🖼️ [传统模式] 替换成功: ${targetMark} -> ![${fileName}](${path})`);
+        }
       } else {
-        console.error(`🖼️ 未找到目标标记: ${targetMark} 在内容中，或vditor未初始化`);
-        console.error(`🖼️ vditor状态: ${window.vditor ? '已初始化' : '未初始化'}`);
+        console.log(`🖼️ [传统模式] 无loadingId，跳过占位符处理`);
       }
     };
     
     window.__onImageSaveError = (name, error, id) => {
-      console.error(`🖼️ 图片保存失败: ${error}`);
+      console.error(`🖼️ [传统模式] 图片保存失败: ${error}`);
       alert(`保存图片失败: ${error}`);
-      if (window.vditor) {
+      
+      // 清理loading占位符
+      if (id && id !== '' && window.vditor) {
         const content = window.vditor.getValue();
         const targetMark = `![加载中...](${id})`;
         const updated = content.replace(targetMark, '');
@@ -349,34 +342,37 @@
             const ext = file.name.split('.').pop() || 'jpg';
             const fileName = `img_${timestamp}.${ext}`;
             
-            // 生成唯一的加载标记，避免多个图片上传时冲突
-            const loadingId = `loading_${fileName}_${timestamp}`;
-            const loadingMark = `![加载中...](${loadingId})`;
+            console.log(`🖼️ 开始处理图片上传: ${fileName}`);
+            console.log(`🖼️ 使用直接插入模式，跳过loading占位符`);
             
-            // 显示加载提示
-            vditor.insertValue(loadingMark);
-            
+            // 🚀 直接模式：不插入loading占位符，让Swift端直接插入最终链接
             // 读取文件
             const reader = new FileReader();
             reader.onload = (e) => {
               const base64 = e.target.result.split(',')[1]; // 去掉 data:image/xxx;base64, 前缀
               
-              // 发送到 Swift 保存
+              console.log(`🖼️ 文件读取完成，发送到Swift处理: ${fileName}`);
+              
+              // 发送到 Swift 保存，不传递loadingId（表示使用直接插入模式）
               window.webkit?.messageHandlers?.bridge?.postMessage({ 
                 type: 'saveImage',
                 fileName: fileName,
                 data: base64,
-                loadingId: loadingId
+                directMode: true  // 标记为直接插入模式
               });
               
-              // 回调函数已在全局定义，无需重新设置
-              console.log(`🖼️ 图片上传请求已发送，等待回调执行...`);
+              console.log(`🖼️ 图片上传请求已发送到Swift，等待直接插入...`);
+            };
+            
+            reader.onerror = (error) => {
+              console.error('🖼️ 文件读取失败:', error);
+              alert('文件读取失败');
             };
             
             reader.readAsDataURL(file);
           } catch (error) {
-            console.error('处理图片失败:', error);
-            alert('处理图片失败');
+            console.error('🖼️ 处理图片失败:', error);
+            alert('处理图片失败: ' + error.message);
           }
           
           return null; // 阻止默认处理
