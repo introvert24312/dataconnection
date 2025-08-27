@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-27T12:23:22Z",
-    "lastModified" : "2025-08-27T12:23:22Z",
+    "createdAt" : "2025-08-27T12:24:05Z",
+    "lastModified" : "2025-08-27T12:24:05Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -14,7 +14,7 @@
       "createdAt" : "2025-08-21T17:49:08Z",
       "displayName" : "好",
       "id" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "isActive" : true,
+      "isActive" : false,
       "isCompound" : false,
       "name" : "好"
     },
@@ -26,7 +26,7 @@
       "createdAt" : "2025-08-22T13:02:19Z",
       "displayName" : "你呢",
       "id" : "83FD4C08-A375-4234-8304-4CE55CC96A75",
-      "isActive" : false,
+      "isActive" : true,
       "isCompound" : false,
       "name" : "你呢"
     },
@@ -234,7 +234,7 @@
         }
       ],
       "text" : "辣椒圈",
-      "updatedAt" : "2025-08-27T12:23:22Z"
+      "updatedAt" : "2025-08-27T12:23:46Z"
     },
     {
       "createdAt" : "2025-08-26T13:14:53Z",
