@@ -44,7 +44,7 @@
     "createdAt" : "2025-08-26T13:14:19Z",
     "displayName" : "染发",
     "id" : "BE26553C-F682-490C-8059-477C2D2DC11A",
-    "isActive" : false,
+    "isActive" : true,
     "isCompound" : false,
     "name" : "染发"
   },
@@ -56,7 +56,7 @@
     "createdAt" : "2025-08-27T16:31:56Z",
     "displayName" : "我喜欢的音乐",
     "id" : "D3165849-185C-45EA-8025-A6E9904EC843",
-    "isActive" : true,
+    "isActive" : false,
     "isCompound" : false,
     "name" : "我喜欢的音乐"
   }
