@@ -1,0 +1,582 @@
+{
+  "config" : {
+    "appVersion" : "1.0",
+    "createdAt" : "2025-08-30T13:04:20Z",
+    "lastModified" : "2025-08-30T13:04:20Z",
+    "version" : "1.0"
+  },
+  "layers" : [
+    {
+      "childLayerIds" : [
+
+      ],
+      "color" : "blue",
+      "createdAt" : "2025-08-21T17:49:08Z",
+      "displayName" : "好",
+      "id" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "isActive" : true,
+      "isCompound" : false,
+      "name" : "好"
+    },
+    {
+      "childLayerIds" : [
+
+      ],
+      "color" : "blue",
+      "createdAt" : "2025-08-22T13:02:19Z",
+      "displayName" : "你呢",
+      "id" : "83FD4C08-A375-4234-8304-4CE55CC96A75",
+      "isActive" : false,
+      "isCompound" : false,
+      "name" : "你呢"
+    },
+    {
+      "childLayerIds" : [
+        "83FD4C08-A375-4234-8304-4CE55CC96A75",
+        "86B9DBDB-832F-480F-B155-769B7858D158"
+      ],
+      "color" : "purple",
+      "createdAt" : "2025-08-22T13:02:40Z",
+      "displayName" : "超级",
+      "id" : "9E9E75EF-FBE4-4EBF-B9E0-4AE4C49A9612",
+      "isActive" : false,
+      "isCompound" : true,
+      "name" : "超级"
+    },
+    {
+      "childLayerIds" : [
+
+      ],
+      "color" : "blue",
+      "createdAt" : "2025-08-26T13:14:19Z",
+      "displayName" : "染发",
+      "id" : "BE26553C-F682-490C-8059-477C2D2DC11A",
+      "isActive" : false,
+      "isCompound" : false,
+      "name" : "染发"
+    },
+    {
+      "childLayerIds" : [
+
+      ],
+      "color" : "blue",
+      "createdAt" : "2025-08-27T16:31:56Z",
+      "displayName" : "我喜欢的音乐",
+      "id" : "D3165849-185C-45EA-8025-A6E9904EC843",
+      "isActive" : false,
+      "isCompound" : false,
+      "name" : "我喜欢的音乐"
+    }
+  ],
+  "metadata" : {
+    "syncEnabled" : true,
+    "totalLayers" : 5,
+    "totalNodes" : 14,
+    "totalTags" : 20
+  },
+  "nodes" : [
+    {
+      "createdAt" : "2025-08-22T06:21:00Z",
+      "id" : "5152BAAC-4115-4639-A554-15E3E4141D06",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "6DFD8A6C-2674-4BBA-A84C-C5DC428884D7",
+          "isShortcutType" : false,
+          "type" : "beef",
+          "value" : "吊龙"
+        },
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "8C412FF4-A482-4C03-938B-682547BFC57C",
+          "isShortcutType" : false,
+          "type" : "peach",
+          "value" : "水蜜桃"
+        },
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "1F5EEE7F-FF55-4825-97CD-1915AD88855D",
+          "isShortcutType" : false,
+          "type" : "love",
+          "value" : "依赖"
+        }
+      ],
+      "text" : "菜单1",
+      "updatedAt" : "2025-08-22T11:02:47Z"
+    },
+    {
+      "createdAt" : "2025-08-22T06:21:28Z",
+      "id" : "89026CDC-1F1B-48BB-8774-F4E7662757E0",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "![参天大树.JPG](Images\/img_1755982844432.JPG)",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "C07D8379-67A4-44C4-BC14-661C7EF35CF3",
+          "isShortcutType" : false,
+          "type" : "beef",
+          "value" : "雪花"
+        }
+      ],
+      "text" : "菜单2",
+      "updatedAt" : "2025-08-28T17:19:17Z"
+    },
+    {
+      "createdAt" : "2025-08-22T10:29:25Z",
+      "id" : "856E988C-2E07-4774-A264-087EBB99F467",
+      "isCompound" : true,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "meaning" : "复合节点：包含 2 个子节点",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "4CF3CBA6-E27E-49F9-B3B1-281D67AF8EC8",
+          "isShortcutType" : false,
+          "type" : "compound",
+          "value" : "1级复合节点"
+        },
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "CB4F3C0A-932C-4A57-9BEF-A431174251C0",
+          "isShortcutType" : false,
+          "type" : "child",
+          "value" : "菜单1"
+        },
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "2285606C-8BA5-4709-A31C-FFC5F29AD5D3",
+          "isShortcutType" : false,
+          "type" : "child",
+          "value" : "菜单2"
+        }
+      ],
+      "text" : "复合节点",
+      "updatedAt" : "2025-08-22T11:02:47Z"
+    },
+    {
+      "createdAt" : "2025-08-22T11:03:24Z",
+      "id" : "BBEBD7E3-2000-44F9-98B5-66DF0C203E11",
+      "isCompound" : true,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "meaning" : "复合节点：包含 1 个子节点",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "1CF8189E-3040-40F3-AC0C-C2D5A3A006CE",
+          "isShortcutType" : false,
+          "type" : "compound",
+          "value" : "2级复合节点"
+        },
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "D57994C4-F3BF-4D71-B4A8-1657A088FD6E",
+          "isShortcutType" : false,
+          "type" : "child",
+          "value" : "复合节点"
+        }
+      ],
+      "text" : "复合节点kkk",
+      "updatedAt" : "2025-08-22T11:03:24Z"
+    },
+    {
+      "createdAt" : "2025-08-22T11:04:20Z",
+      "id" : "7FF75D25-BCEA-4727-874E-7E23985962A9",
+      "isCompound" : true,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "meaning" : "复合节点：包含 复合节点kkk",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "B28078C5-44DF-4EEE-9380-2B2FB29ACF2C",
+          "isShortcutType" : false,
+          "type" : "compound",
+          "value" : "3级复合节点"
+        },
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "DB46B9D7-F7F6-40BC-AA68-E7E2DBEEB1ED",
+          "isShortcutType" : false,
+          "type" : "child",
+          "value" : "复合节点kkk"
+        }
+      ],
+      "text" : "有趣",
+      "updatedAt" : "2025-08-22T11:04:20Z"
+    },
+    {
+      "createdAt" : "2025-08-24T05:53:58Z",
+      "id" : "00D5941B-DE84-45F7-ACB0-F17A750F12C6",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "价格就是供给关系的桥梁\n\n我说的没错吧？？\n\n彻底搞懂怎么定价，",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "5A87C3E5-9B9F-470E-828A-5BEA1457E629",
+          "isShortcutType" : false,
+          "type" : "kd",
+          "value" : "df"
+        }
+      ],
+      "text" : "是离开对方",
+      "updatedAt" : "2025-08-24T07:26:32Z"
+    },
+    {
+      "createdAt" : "2025-08-24T12:04:04Z",
+      "id" : "E8F1120A-0CD6-4C64-B9A2-019EDBFE5DE0",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "考六级\n\n![img_1756297331152.JPG](Images\/img_1756297331152.JPG)\n\n# sdlkfj\n\n![img_1756297357849.JPG](Images\/img_1756297357849.JPG)\n\n速度来看风景速度",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "5466B332-1BEE-4EC5-97BB-91452ABABCC1",
+          "isShortcutType" : false,
+          "latitude" : 37.46903135569384,
+          "longitude" : 121.63467698281826,
+          "type" : "loc",
+          "value" : "养马岛租车"
+        }
+      ],
+      "text" : "辣椒圈",
+      "updatedAt" : "2025-08-27T13:26:45Z"
+    },
+    {
+      "createdAt" : "2025-08-26T13:14:53Z",
+      "id" : "81BE67D3-52D1-4ED5-9AC2-19B3A83FF7D7",
+      "isCompound" : false,
+      "layerId" : "BE26553C-F682-490C-8059-477C2D2DC11A",
+      "markdown" : "# gpt说指甲花水解的黄金时间是30min\n\n[youqu ](https:\/\/www.bilibili.com)",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "3DE9E05F-E7B0-4130-971C-EB84CE9A0540",
+          "isShortcutType" : false,
+          "type" : "sk",
+          "value" : "地方"
+        }
+      ],
+      "text" : "基本流程",
+      "updatedAt" : "2025-08-29T19:19:34Z"
+    },
+    {
+      "createdAt" : "2025-08-27T07:00:24Z",
+      "id" : "A8013248-3308-47FB-A7A1-E291F928F5FF",
+      "isCompound" : false,
+      "layerId" : "83FD4C08-A375-4234-8304-4CE55CC96A75",
+      "markdown" : "[已修复]",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "4FAEB18D-B202-4F41-862F-AE90D24C2502",
+          "isShortcutType" : true,
+          "type" : "i",
+          "value" : "史蒂夫"
+        }
+      ],
+      "text" : "有趣啊",
+      "updatedAt" : "2025-08-27T09:49:06Z"
+    },
+    {
+      "createdAt" : "2025-08-27T12:24:27Z",
+      "id" : "7F37041C-7F20-4B97-BF97-213E27228276",
+      "isCompound" : false,
+      "layerId" : "83FD4C08-A375-4234-8304-4CE55CC96A75",
+      "markdown" : "",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "F2CABED5-9560-4860-8309-D91468162678",
+          "isShortcutType" : false,
+          "type" : "kd",
+          "value" : "sdf"
+        }
+      ],
+      "text" : "时尚大方",
+      "updatedAt" : "2025-08-27T12:24:28Z"
+    },
+    {
+      "createdAt" : "2025-08-27T14:22:49Z",
+      "id" : "63FC8496-44CC-420C-9AD8-19C69114CD1E",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "F6B44EB3-0C92-4441-8F50-A41A5FC3AF4B",
+          "isShortcutType" : true,
+          "type" : "sdkjf",
+          "value" : "dslfjk"
+        }
+      ],
+      "text" : "你是有趣的",
+      "updatedAt" : "2025-08-27T14:22:49Z"
+    },
+    {
+      "createdAt" : "2025-08-27T15:15:46Z",
+      "id" : "1DD3B8D1-A7E6-437A-9439-44A1060E0196",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "那咋了",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "3D28FF21-1603-4512-A0AE-A5474BFE3E03",
+          "isShortcutType" : true,
+          "type" : "sss",
+          "value" : "怎么了"
+        }
+      ],
+      "text" : "啊哈哈",
+      "updatedAt" : "2025-08-29T17:04:17Z"
+    },
+    {
+      "createdAt" : "2025-08-27T16:32:16Z",
+      "id" : "5C561FFB-71AA-4D65-BE99-83C0DDE1C0D2",
+      "isCompound" : false,
+      "layerId" : "D3165849-185C-45EA-8025-A6E9904EC843",
+      "markdown" : "# 在精神高压的情况下\n\n1. [盔甲士兵](https:\/\/www.youtube.com\/watch?v=mXpLHdYhMKA&list=RDmXpLHdYhMKA&start_radio=1)\n2. ![img_1756559042759.jpg](Images\/img_1756559042759.jpg)\n",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "6837A718-AA2C-4254-A3F4-1A70332688AA",
+          "isShortcutType" : false,
+          "type" : "numb",
+          "value" : "熬夜受不了"
+        }
+      ],
+      "text" : "发呆歌单",
+      "updatedAt" : "2025-08-30T13:04:16Z"
+    },
+    {
+      "createdAt" : "2025-08-28T01:57:36Z",
+      "id" : "0BEA4C32-7185-4791-BB01-EF8C9205A6E7",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "1D5D94CB-E25A-4493-A013-3D0433EAE790",
+          "isShortcutType" : false,
+          "latitude" : 26.967107133273675,
+          "longitude" : 114.25504333375375,
+          "type" : "loc",
+          "value" : "非常厚"
+        }
+      ],
+      "text" : "那咋了",
+      "updatedAt" : "2025-08-28T01:57:36Z"
+    }
+  ],
+  "tagMappings" : [
+    {
+      "id" : "69FE3F68-0BB3-48F8-BF18-24939F509697",
+      "key" : "loc",
+      "typeName" : "位置"
+    },
+    {
+      "id" : "9642D74A-5C15-4AC4-B01F-24B9C543975C",
+      "key" : "compound",
+      "typeName" : "复合节点"
+    },
+    {
+      "id" : "DCFDEA1B-A458-48EF-B692-7C86E781A84B",
+      "key" : "child",
+      "typeName" : "子节点"
+    },
+    {
+      "id" : "FEF6ED27-AB7C-4148-B61A-D2235D8BD700",
+      "key" : "root",
+      "typeName" : "词根"
+    },
+    {
+      "id" : "EC3EF234-A276-49DF-9D90-6E447FC4C72D",
+      "key" : "beef",
+      "typeName" : "牛肉类型"
+    },
+    {
+      "id" : "EC7CD4E5-DEA3-4608-B5E6-0117851DC713",
+      "key" : "kind",
+      "typeName" : "kind"
+    },
+    {
+      "id" : "D6892419-5F53-42E6-8614-7A3C0AF0BFFD",
+      "key" : "lk",
+      "typeName" : "lk"
+    },
+    {
+      "id" : "94021516-2EFA-4098-AA5B-8D963D92C1EF",
+      "key" : "fr",
+      "typeName" : "水果品种"
+    },
+    {
+      "id" : "DB7B8BB1-DEE3-41D7-A047-D36B620342C5",
+      "key" : "果盘1",
+      "typeName" : "果盘1"
+    },
+    {
+      "id" : "39380BAB-780D-481F-A04D-1CD17B7DB762",
+      "key" : "菜单1",
+      "typeName" : "菜单1"
+    },
+    {
+      "id" : "6AC1D498-7A49-44CF-BD64-4A5EE0B6689B",
+      "key" : "peach",
+      "typeName" : "桃子"
+    },
+    {
+      "id" : "3F864934-B7BD-4ED5-8CDB-5BB681EA30B5",
+      "key" : "love",
+      "typeName" : "恋爱"
+    },
+    {
+      "id" : "3C6A4F75-1ADF-4E78-9454-FD5F92D42467",
+      "key" : "kk",
+      "typeName" : "史蒂夫"
+    },
+    {
+      "id" : "D0B14A3E-2AC8-416D-B3B0-03B76E702CBE",
+      "key" : "lkkk",
+      "typeName" : "lkkk"
+    },
+    {
+      "id" : "2AF657C3-E879-4F42-8A7A-2E19D5C70EF3",
+      "key" : "jjkk",
+      "typeName" : "尼玛的"
+    },
+    {
+      "id" : "D95F28BF-2C71-416E-9937-23778EADBCEF",
+      "key" : "sd",
+      "typeName" : "史蒂夫收到"
+    },
+    {
+      "id" : "C7F68C45-A088-4E5F-87DC-7605D0594543",
+      "key" : "dfk",
+      "typeName" : "dfk"
+    },
+    {
+      "id" : "075CD211-A648-446A-9147-46FD05800C54",
+      "key" : "dlf",
+      "typeName" : "dlf"
+    },
+    {
+      "id" : "57E52304-4B4B-4ADD-B2D5-35D6CD85CD91",
+      "key" : "oo",
+      "typeName" : "好看"
+    },
+    {
+      "id" : "CA5D71A9-8097-4C0E-B1EB-2AE0E1906327",
+      "key" : "kd",
+      "typeName" : "sdf"
+    },
+    {
+      "id" : "A93E78D4-7C30-496C-A5EB-B898548E7CB8",
+      "key" : "sdf",
+      "typeName" : "sd"
+    },
+    {
+      "id" : "8A137AA9-0F0A-471D-A9B3-45460C67D7BA",
+      "key" : "ksldfj",
+      "typeName" : "ksldfj"
+    },
+    {
+      "id" : "FF1BFF5F-35D2-49DA-A8F4-8E8FCA80CC5B",
+      "key" : "ksdf",
+      "typeName" : "sdsdffsdfd"
+    },
+    {
+      "id" : "A4F7E0E4-4E88-4D0E-93C8-62BCFDD50D5B",
+      "key" : "sdsf",
+      "typeName" : "sdsf"
+    },
+    {
+      "id" : "6C0DA61D-257E-4BA1-A632-0D803FA3E893",
+      "key" : "sdfs",
+      "typeName" : "sdfs"
+    },
+    {
+      "id" : "5F8F7B29-EB4C-49C4-82B7-A954FBFAEA81",
+      "key" : "sdssf",
+      "typeName" : "sdssf"
+    },
+    {
+      "id" : "30A4738E-BFE2-403E-A6BA-86173E422628",
+      "key" : "sdfsd",
+      "typeName" : "sd"
+    },
+    {
+      "id" : "50EFA552-CE44-4E14-A489-BD0B2B5828CB",
+      "key" : "kdsfj",
+      "typeName" : "kdsfj"
+    },
+    {
+      "id" : "C7302F3A-C250-4840-BF6B-E70B21C6A077",
+      "key" : "asdf",
+      "typeName" : "sdf"
+    },
+    {
+      "id" : "3A6AD186-53C1-4884-B933-E1105815DD71",
+      "key" : "helo",
+      "typeName" : "helo"
+    },
+    {
+      "id" : "0D436F9E-4DA2-47E3-A5F2-8219E377F5C8",
+      "key" : "k",
+      "typeName" : "k"
+    },
+    {
+      "id" : "D52A9950-20C3-49DA-B78E-98718006EF4A",
+      "key" : "kl",
+      "typeName" : "kl"
+    },
+    {
+      "id" : "1815253C-DA4B-48B0-A6FF-3AB66A57B9E0",
+      "key" : "i",
+      "typeName" : "i"
+    },
+    {
+      "id" : "89254E91-290C-4E84-A4EA-71C8D7971475",
+      "key" : "sdkjf",
+      "typeName" : "sdkjf"
+    },
+    {
+      "id" : "19A8CEF2-DF41-4CCF-BD43-BCD0B3611A5F",
+      "key" : "sss",
+      "typeName" : "sss"
+    },
+    {
+      "id" : "9F0F94AF-E23F-4F14-9F39-377795635C49",
+      "key" : "sk",
+      "typeName" : "你是有趣的"
+    },
+    {
+      "id" : "51F86F0A-B70A-421A-BE98-AB94C08C73F5",
+      "key" : "sdkf",
+      "typeName" : "史蒂夫史蒂夫"
+    },
+    {
+      "id" : "1028E06A-D32E-446B-9BA3-E373B105D288",
+      "key" : "胖胖胖",
+      "typeName" : "胖胖胖"
+    },
+    {
+      "id" : "F165FECD-D959-48B7-8C7D-56CE72FB4622",
+      "key" : "善良的看法就",
+      "typeName" : "善良的看法就"
+    },
+    {
+      "id" : "5B3A0C79-57CD-4558-82AC-65AB3B577B45",
+      "key" : "numb",
+      "typeName" : "困"
+    }
+  ]
+}
