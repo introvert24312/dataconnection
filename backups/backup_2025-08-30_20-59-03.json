@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-30T09:39:02Z",
-    "lastModified" : "2025-08-30T09:39:02Z",
+    "createdAt" : "2025-08-30T12:59:03Z",
+    "lastModified" : "2025-08-30T12:59:03Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -72,7 +72,7 @@
     "syncEnabled" : true,
     "totalLayers" : 5,
     "totalNodes" : 14,
-    "totalTags" : 19
+    "totalTags" : 20
   },
   "nodes" : [
     {
@@ -83,22 +83,22 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "B6B5E7B2-7B27-4348-A181-C2629E7F2193",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "6DFD8A6C-2674-4BBA-A84C-C5DC428884D7",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "吊龙"
         },
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "093A5B6F-AEF5-4396-913E-A55B93402A83",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "8C412FF4-A482-4C03-938B-682547BFC57C",
           "isShortcutType" : false,
           "type" : "peach",
           "value" : "水蜜桃"
         },
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "CB2F1C99-2230-4AE4-8C16-8556C524B773",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "1F5EEE7F-FF55-4825-97CD-1915AD88855D",
           "isShortcutType" : false,
           "type" : "love",
           "value" : "依赖"
@@ -115,8 +115,8 @@
       "markdown" : "![参天大树.JPG](Images\/img_1755982844432.JPG)",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "58E2D474-A952-4546-B3EC-D23CB506E70E",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "C07D8379-67A4-44C4-BC14-661C7EF35CF3",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "雪花"
@@ -134,22 +134,22 @@
       "meaning" : "复合节点：包含 2 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "96AA2850-6537-40AA-A2A5-AB7715EBD1E9",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "4CF3CBA6-E27E-49F9-B3B1-281D67AF8EC8",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "1级复合节点"
         },
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "D3C51C2C-C69E-497A-94B4-F121555900AD",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "CB4F3C0A-932C-4A57-9BEF-A431174251C0",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单1"
         },
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "1B22C8F5-5AFE-4BC7-B1EF-DE99E837F475",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "2285606C-8BA5-4709-A31C-FFC5F29AD5D3",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单2"
@@ -167,15 +167,15 @@
       "meaning" : "复合节点：包含 1 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "9826974A-3869-4ED8-87F5-98F6F49235CF",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "1CF8189E-3040-40F3-AC0C-C2D5A3A006CE",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "2级复合节点"
         },
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "CF17E2B9-CA91-4F7B-9EA8-9E8E0ED5B756",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "D57994C4-F3BF-4D71-B4A8-1657A088FD6E",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点"
@@ -193,15 +193,15 @@
       "meaning" : "复合节点：包含 复合节点kkk",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "F64B7F2D-188B-4B85-A052-AC094BD7FA7E",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "B28078C5-44DF-4EEE-9380-2B2FB29ACF2C",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "3级复合节点"
         },
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "64BF605C-2217-42E5-A63D-4A8517DAB561",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "DB46B9D7-F7F6-40BC-AA68-E7E2DBEEB1ED",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点kkk"
@@ -218,8 +218,8 @@
       "markdown" : "价格就是供给关系的桥梁\n\n我说的没错吧？？\n\n彻底搞懂怎么定价，",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "D62A7760-2315-438B-B7D0-1D03289A35CF",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "5A87C3E5-9B9F-470E-828A-5BEA1457E629",
           "isShortcutType" : false,
           "type" : "kd",
           "value" : "df"
@@ -236,8 +236,8 @@
       "markdown" : "考六级\n\n![img_1756297331152.JPG](Images\/img_1756297331152.JPG)\n\n# sdlkfj\n\n![img_1756297357849.JPG](Images\/img_1756297357849.JPG)\n\n速度来看风景速度",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "40D43259-49BB-4020-B8D3-11C10634F2FA",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "5466B332-1BEE-4EC5-97BB-91452ABABCC1",
           "isShortcutType" : false,
           "latitude" : 37.46903135569384,
           "longitude" : 121.63467698281826,
@@ -256,8 +256,8 @@
       "markdown" : "# gpt说指甲花水解的黄金时间是30min\n\n[youqu ](https:\/\/www.bilibili.com)",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "CF8BD289-AA80-4799-996D-0396593102D7",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "3DE9E05F-E7B0-4130-971C-EB84CE9A0540",
           "isShortcutType" : false,
           "type" : "sk",
           "value" : "地方"
@@ -274,8 +274,8 @@
       "markdown" : "[已修复]",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "A16B63C1-F88A-4F53-B888-F4BD2A32D366",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "4FAEB18D-B202-4F41-862F-AE90D24C2502",
           "isShortcutType" : true,
           "type" : "i",
           "value" : "史蒂夫"
@@ -292,8 +292,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "5748728F-0538-49C7-876D-C7A016D96C04",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "F2CABED5-9560-4860-8309-D91468162678",
           "isShortcutType" : false,
           "type" : "kd",
           "value" : "sdf"
@@ -310,8 +310,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "96988D35-9CA6-4C8F-843F-8936F916DB3A",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "F6B44EB3-0C92-4441-8F50-A41A5FC3AF4B",
           "isShortcutType" : true,
           "type" : "sdkjf",
           "value" : "dslfjk"
@@ -328,8 +328,8 @@
       "markdown" : "那咋了",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "256FBB0C-3A34-4099-80A3-84EFF77D4745",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "3D28FF21-1603-4512-A0AE-A5474BFE3E03",
           "isShortcutType" : true,
           "type" : "sss",
           "value" : "怎么了"
@@ -343,12 +343,18 @@
       "id" : "5C561FFB-71AA-4D65-BE99-83C0DDE1C0D2",
       "isCompound" : false,
       "layerId" : "D3165849-185C-45EA-8025-A6E9904EC843",
-      "markdown" : "# 在精神高压的情况下\n\n1. [盔甲士兵](https:\/\/www.youtube.com\/watch?v=mXpLHdYhMKA&list=RDmXpLHdYhMKA&start_radio=1)\n2.",
+      "markdown" : "# 在精神高压的情况下\n\n1. [盔甲士兵](https:\/\/www.youtube.com\/watch?v=mXpLHdYhMKA&list=RDmXpLHdYhMKA&start_radio=1)\n2. \n\n",
       "tags" : [
-
+        {
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "6837A718-AA2C-4254-A3F4-1A70332688AA",
+          "isShortcutType" : false,
+          "type" : "numb",
+          "value" : "熬夜受不了"
+        }
       ],
       "text" : "发呆歌单",
-      "updatedAt" : "2025-08-30T09:34:47Z"
+      "updatedAt" : "2025-08-30T12:59:02Z"
     },
     {
       "createdAt" : "2025-08-28T01:57:36Z",
@@ -358,8 +364,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T09:39:01Z",
-          "id" : "CA130530-45B2-43DA-B164-6743C818C392",
+          "createdAt" : "2025-08-30T12:58:42Z",
+          "id" : "1D5D94CB-E25A-4493-A013-3D0433EAE790",
           "isShortcutType" : false,
           "latitude" : 26.967107133273675,
           "longitude" : 114.25504333375375,
@@ -566,6 +572,11 @@
       "id" : "F165FECD-D959-48B7-8C7D-56CE72FB4622",
       "key" : "善良的看法就",
       "typeName" : "善良的看法就"
+    },
+    {
+      "id" : "5B3A0C79-57CD-4558-82AC-65AB3B577B45",
+      "key" : "numb",
+      "typeName" : "困"
     }
   ]
 }
