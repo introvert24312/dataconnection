@@ -1,8 +1,8 @@
 {
   "config" : {
     "appVersion" : "1.0",
-    "createdAt" : "2025-08-30T13:30:50Z",
-    "lastModified" : "2025-08-30T13:30:50Z",
+    "createdAt" : "2025-08-30T15:03:55Z",
+    "lastModified" : "2025-08-30T15:03:55Z",
     "version" : "1.0"
   },
   "layers" : [
@@ -14,7 +14,7 @@
       "createdAt" : "2025-08-21T17:49:08Z",
       "displayName" : "好",
       "id" : "86B9DBDB-832F-480F-B155-769B7858D158",
-      "isActive" : false,
+      "isActive" : true,
       "isCompound" : false,
       "name" : "好"
     },
@@ -51,7 +51,7 @@
       "createdAt" : "2025-08-26T13:14:19Z",
       "displayName" : "染发",
       "id" : "BE26553C-F682-490C-8059-477C2D2DC11A",
-      "isActive" : true,
+      "isActive" : false,
       "isCompound" : false,
       "name" : "染发"
     },
@@ -71,8 +71,8 @@
   "metadata" : {
     "syncEnabled" : true,
     "totalLayers" : 5,
-    "totalNodes" : 14,
-    "totalTags" : 20
+    "totalNodes" : 15,
+    "totalTags" : 21
   },
   "nodes" : [
     {
@@ -83,22 +83,22 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "B29AB7E5-75C9-4256-8A4A-FC0BC8463855",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "8B4D841E-ACAE-4706-B3FA-19D67F7FBAAB",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "吊龙"
         },
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "ECE84390-AC37-47CE-AE52-3983016BF24C",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "7A8C5DF6-DDB1-4555-872A-721C466C1CE5",
           "isShortcutType" : false,
           "type" : "peach",
           "value" : "水蜜桃"
         },
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "7196ACEB-FA2E-4A9A-910D-5C28C813B314",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "8BE6DEB0-A4A6-4A41-BD2D-9B4A851F973C",
           "isShortcutType" : false,
           "type" : "love",
           "value" : "依赖"
@@ -115,8 +115,8 @@
       "markdown" : "![参天大树.JPG](Images\/img_1755982844432.JPG)",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "FC9E50E5-496B-4854-91D2-7DE182A5110E",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "8BD0F04A-262B-41A7-9B65-262ABE91FCA1",
           "isShortcutType" : false,
           "type" : "beef",
           "value" : "雪花"
@@ -134,22 +134,22 @@
       "meaning" : "复合节点：包含 2 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "95428250-975B-461C-B870-6D8F90A01814",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "BEC2BE05-A8D8-45DA-98B8-C5C14ECD6A90",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "1级复合节点"
         },
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "49AE13A3-36A7-40F5-8167-C37FF4331F2E",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "E7986160-8D29-4A9A-914A-66C7140DBB30",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单1"
         },
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "ADDEDBC8-4068-43D9-80DC-C4B16CD34567",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "7F777C01-5513-4B78-8A17-5D0463153F4A",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "菜单2"
@@ -167,15 +167,15 @@
       "meaning" : "复合节点：包含 1 个子节点",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "B21D9CB7-0974-4F40-9633-1A9D428C8E64",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "D058E0FF-3EE3-4F3E-822B-3AC0B841D2F8",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "2级复合节点"
         },
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "25893568-D33A-4973-A718-B2C7289649A3",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "C4389072-1B3C-42F9-8E6C-4252BF11E6E4",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点"
@@ -193,15 +193,15 @@
       "meaning" : "复合节点：包含 复合节点kkk",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "81066F10-14CE-4355-A1C5-D1805AC5BBCE",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "84281C2B-7104-4634-9CFA-87414F785060",
           "isShortcutType" : false,
           "type" : "compound",
           "value" : "3级复合节点"
         },
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "118A498D-E9B9-4AF8-8840-4A3238A72BEE",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "6F517F29-184B-45AE-8AF7-D05981BB7514",
           "isShortcutType" : false,
           "type" : "child",
           "value" : "复合节点kkk"
@@ -218,8 +218,8 @@
       "markdown" : "价格就是供给关系的桥梁\n\n我说的没错吧？？\n\n彻底搞懂怎么定价，",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "A8D3D1E9-F672-471A-AF87-41198AE27489",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "ED2302FE-443C-4BFA-A4C3-3A690AEB20A1",
           "isShortcutType" : false,
           "type" : "kd",
           "value" : "df"
@@ -236,8 +236,8 @@
       "markdown" : "考六级\n\n![img_1756297331152.JPG](Images\/img_1756297331152.JPG)\n\n# sdlkfj\n\n![img_1756297357849.JPG](Images\/img_1756297357849.JPG)\n\n速度来看风景速度",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "28C2DACE-906F-492D-ADAB-C46D350F4B37",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "C2B3516C-5571-473F-A5F9-4D10BB93A7EB",
           "isShortcutType" : false,
           "latitude" : 37.46903135569384,
           "longitude" : 121.63467698281826,
@@ -256,8 +256,8 @@
       "markdown" : "# gpt说指甲花水解的黄金时间是30min\n\n[youqu ](https:\/\/www.bilibili.com)",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "12D3865C-353F-41FD-9A7F-F24C3E427B85",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "F60A0A87-EAB0-4CBA-A6A8-C79D3A333D40",
           "isShortcutType" : false,
           "type" : "sk",
           "value" : "地方"
@@ -274,8 +274,8 @@
       "markdown" : "[已修复]",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "014AAAAF-461B-4811-8C9D-B3DC02A418D7",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "2C103F5E-E372-4206-B555-B18A3246D17D",
           "isShortcutType" : true,
           "type" : "i",
           "value" : "史蒂夫"
@@ -292,8 +292,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "A5D64CBC-FA49-481C-89C6-AF9D20721408",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "3244DC3A-1C2D-4862-97B5-F5233197FADF",
           "isShortcutType" : false,
           "type" : "kd",
           "value" : "sdf"
@@ -310,8 +310,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "8886E8C5-A72F-4C75-92C0-5FA495894FBA",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "7070F1B4-6531-4A0C-87DD-F55365A7280B",
           "isShortcutType" : true,
           "type" : "sdkjf",
           "value" : "dslfjk"
@@ -328,8 +328,8 @@
       "markdown" : "那咋了",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "35F4A9D8-6D1E-4CCB-BF84-E1ACA20CEF68",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "07386191-BB9E-4E0E-8001-367CA5B1AA4D",
           "isShortcutType" : true,
           "type" : "sss",
           "value" : "怎么了"
@@ -346,8 +346,8 @@
       "markdown" : "# 在精神高压的情况下\n\n1. [盔甲士兵](https:\/\/www.youtube.com\/watch?v=mXpLHdYhMKA&list=RDmXpLHdYhMKA&start_radio=1)\n2. ![img_1756559042759.jpg](Images\/img_1756559042759.jpg)",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "366723F9-7637-4744-BF94-E2D5D73E22B1",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "F428651B-BA51-4E50-B5D6-2E48CA8327BE",
           "isShortcutType" : false,
           "type" : "numb",
           "value" : "熬夜受不了"
@@ -364,8 +364,8 @@
       "markdown" : "",
       "tags" : [
         {
-          "createdAt" : "2025-08-30T13:30:49Z",
-          "id" : "2E898F98-B51F-49FC-9321-0074D9FA3819",
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "36B4E496-D458-46DE-84C7-FA1FBF6AD3B5",
           "isShortcutType" : false,
           "latitude" : 26.967107133273675,
           "longitude" : 114.25504333375375,
@@ -375,6 +375,26 @@
       ],
       "text" : "那咋了",
       "updatedAt" : "2025-08-28T01:57:36Z"
+    },
+    {
+      "createdAt" : "2025-08-30T13:33:37Z",
+      "id" : "8779B892-C631-4A12-BAD0-CF1E663007C5",
+      "isCompound" : false,
+      "layerId" : "86B9DBDB-832F-480F-B155-769B7858D158",
+      "markdown" : "",
+      "tags" : [
+        {
+          "createdAt" : "2025-08-30T15:03:55Z",
+          "id" : "80538DC9-7CBE-4E56-8BEF-5BE45F46C846",
+          "isShortcutType" : false,
+          "latitude" : 27.12601919090913,
+          "longitude" : 114.99377010804209,
+          "type" : "loc",
+          "value" : "sdf"
+        }
+      ],
+      "text" : "来上课地方",
+      "updatedAt" : "2025-08-30T13:33:37Z"
     }
   ],
   "tagMappings" : [
